@@ -1,0 +1,330 @@
+/* Bar (header, footer, nav) for UND theme */
+.bar.bar-ims {
+    border-color: #007444;
+    background-color: #009A44;
+    background-image: linear-gradient(0deg, #007444, #007444 50%, transparent 50%);
+    color: #FFFFFF;
+}
+
+.bar.bar-ims .title {
+    color: #FFFFFF;
+}
+
+.bar-ims .button {
+    border-color: #007444;
+    background-color: #009A44;
+    color: #FFFFFF;
+}
+
+.bar-ims .button:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.bar-ims .button.active, .bar-ims .button.activated {
+    border-color: #007444;
+    background-color: #007444;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bar-ims .button.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+.bar-ims .button.button-icon {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+}
+
+/* Button for IMS Theme */
+.button.button-ims-blue {
+    border-color: #007444;
+    background-color: #009A44;
+    color: #FFFFFF;
+}
+
+.button.button-ims-blue:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button.button-ims-blue.active, .button.button-ims-blue.activated {
+    border-color: #007444;
+    background-color: #007444;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button.button-ims-blue.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #009A44;
+}
+
+.button.button-ims-blue.button-icon {
+    border-color: transparent;
+    background: none;
+}
+
+.button.button-ims-blue.button-outline {
+    border-color: #009A44;
+    background: transparent;
+    color: #009A44;
+}
+
+.button.button-ims-blue.button-outline.active, .button.button-ims-blue.button-outline.activated {
+    background-color: #009A44;
+    box-shadow: none;
+    color: #FFFFFF;
+}
+/* End IMS Theme Styles */
+
+.Menu ion-item:hover {
+	cursor: pointer;
+}
+
+.Scan-Items ion-footer-bar {
+	padding: 0;
+}
+
+.Scan-Items .scan-btn {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.Scan-Items .ion-checkmark-circled {
+	color: #009A44;
+}
+
+/* Place the content at the bottom of its parent content */
+.Menu .scroll, .Scan-Settings .scroll {
+    height: 100%;
+} .Menu .button-bottom, .Scan-Settings .button-bottom {
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+}
+
+.Scan-Settings .item-note, .Edit-Item .item-note {
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    color: #444444;
+}
+
+.Scan-Items select, .Search-Items select, .Edit-Item select, .New-Item select, .Add-Room select  {
+    font-size: 16px;
+    color: #444444;
+}
+
+.Scan-Items select:disabled, .Edit-Item select:disabled {
+	pointer-events: none;
+}
+
+.Edit-Item select:disabled{
+    z-index: 1;
+    padding-right: 16px;
+}
+
+.Edit-Item .item .parent-not-set {
+    z-index: 0;
+}
+
+.Edit-Item .item-input input, .Add-Room .item-input input {
+    text-align: right;
+    font-size: 16px;
+    color: #444444;
+}
+
+.Edit-Item .item-input input:disabled {
+    background-color: transparent;
+}
+
+.Edit-Item .item-input textarea {
+    background-color: transparent;
+    font-size: 16px;
+    color: #444444;
+}
+
+.Edit-Item .item-input textarea:disabled {
+    background-color: transparent;
+}
+
+.Edit-Item .non-editable-field {
+	background-color: #f5f5f5;
+}
+
+.Edit-Item .non-editable-field span, .Edit-Item .non-editable-field h2 {
+	color: #6d6d6d;
+}
+
+/* Animate the inner content when the content is clicked */
+.Scan-Items .accordion, .View-Items .accordion {
+    transition: all 0.09s linear;
+} .Scan-Items .accordion.no-animate, .View-Items .accordion.no-animate {
+    transition: none;
+}
+
+/* The properties to animate for the inner content (see above) */
+.Scan-Items .hidden, .View-Items .hidden {
+    height: 0;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+}
+
+/* Place the content at the bottom of its parent content */
+.Search-Items .scroll {
+    height: 100%;
+} .Search-Items .search {
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+/* LOGIN */
+
+.Login ion-content {
+    background-color: #FAFAFA;
+}
+
+.Login h2 {
+    text-align: center;
+    color: #009A44;
+}
+
+/*.Login button {
+    border-color: transparent;
+    background-color: rgb(63,81,181);
+    color: #fff
+}*/
+
+/* Arrange the child content in the center (vertically) of the view */
+.Login .fullscreen {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -ms-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* Arrange the child content in the center (horizontally) */
+.Login .center-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* Expand the content or set its width */
+.Login .card {
+    width: 100%;
+    padding: 20px;
+} @media (min-width: 400px) {
+    .Login .card {
+        width: 400px;
+    }
+}
+
+/* Center the child content vertically, set the height, remove extra separation around the content, and make sure the content borders are visible */
+.Login .card .item.line {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -ms-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0;
+} .Login .card .item.line:first-child {
+    border-top: 1px solid #DDDDDD;
+} .Login .card .item.line:last-child {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/* Decrease the size of the content */
+.Login .card .item .like-textbox {
+    font-size: 14px;
+}
+
+/* Increase the size of, and create space around, the content */
+.Login .card .incorrect-credentials {
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #d32F2f;
+}
+
+/* Remove the curved border of the content */
+.Login .card .button {
+    padding: 0;
+    border-radius: 0;
+}
+
+/* Create separation around the content */
+.Error div {
+    margin: 10px;
+}
+.Error ion-content {
+    top: 44px;
+}
+
+.Add-Room .error {
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #d32F2f;
+}
+
+.Add-Room .success {
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #2e7b32;
+}

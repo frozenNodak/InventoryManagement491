@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#303F9F">
+	<title>Inventory Manager</title>
+	
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.1.0/ui-grid.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-select/0.14.2/select.min.css" />
+	<link rel="stylesheet" href="css/login.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	
+</head>
+<body ng-app="app">
+	<div class="login" ng-show="!$root.user.logged" ng-controller="Login">
+		<div class="login-box">
+			<div id="login-und-logo"></div>
+			<div class="left-login">
+				<form name="loginForm">
+				<h1>Log in</h1>
+					<md-input-container class="width-100">
+						<label>Email address</label>
+						<input required name="username" maxlength="255" autocomplete="off" spellcheck="false" ng-model="$root.user.username" ng-pattern="/^.+@.+\..+$/" />
+						<div ng-messages="loginForm.username.$error" role="alert">
+							<div ng-message="maxlength">Please enter a valid email address.</div>
+							<div ng-message="required">Please enter your email address.</div>
+							<div ng-message="pattern">Please log in using your email address.</div>
+						</div>
+					</md-input-container>
+					<md-input-container class="width-100 password">
+						<label>Password</label>
+						<input required name="password" type="password" ng-model="$root.user.password" />
+						<div ng-messages="loginForm.password.$error" role="alert">
+							<div ng-message="required">A password is required to log in.</div>
+						</div>
+					</md-input-container>
+					<md-button class="md-primary md-raised" type="submit" ng-click="loginForm.$valid && login($root.user)">Log In</md-button>
+				</form>
+			</div>
+			<div class="right-login">
+				<h3>Forgot your password?</h3>
+				<a href="#" ng-click="showForgotPasswordDialog($event)">Reset your password here.</a>
+			</div>
+		</div>
+	</div>
+	<div class="container" ng-show="$root.user.logged" local-view>
+		<div class="content">
+			<header>
+				<button id="menu"><span></span></button>
+				<div class="headerContent">
+					Inventory Manager
+				</div>
+			</header>
+			<nav>
+				<div class="undLogo"></div>
+				<ul>
+					<li><a class="nav-link" href="#/home">Home</a></li>
+					<li ng-show="user.is_admin"><a class="nav-link" href="#/users">Users</a></li>
+					<li><a class="nav-link" href="#/inventory">Inventory</a></li>
+					<li><a class="nav-link" href="#/profile">My Account</a></li>
+					<li><a class="nav-link" href="#">Log Out</a></li>
+				</ul>
+			</nav>
+			<div id="navMask"></div>
+			<div class="appContent fade" data-ng-view>
+			</div>
+		</div>
+		<footer></footer>
+	</div>
+	
+	<!-- CDN scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-aria.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-messages.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.2.7/angular-local-storage.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.1.0/ui-grid.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-select/0.14.2/select.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	
+	<!-- Local scripts -->
+	<script src="js/uiHandlers.js"></script>
+	<script src="js/app/app.js"></script>
+	<script src="js/app/login.js"></script>
+	<script src="js/app/home.js"></script>
+	<script src="js/app/users.js"></script>
+	<script src="js/app/inventory.js"></script>
+	<script src="js/app/account.js"></script>
+	
+</body>
+</html>

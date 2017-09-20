@@ -1,0 +1,49 @@
+<md-dialog aria-label="Update user" ng-cloak>
+	<form name="updateUserForm">
+		<md-toolbar>
+			<div class="md-toolbar-tools">
+				<h2>Update {{ og_user.first_name }} {{ og_user.last_name }}</h2>
+				<span flex></span>
+				<md-button class="md-icon-button" ng-click="cancel()">
+					<md-icon md-svg-src="images/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+				</md-button>
+			</div>
+		</md-toolbar>
+		<md-dialog-content>
+			<div class="md-dialog-content">
+				<p>Use the form below to update the user's information.</p>
+				<div class="form md-inline-form">
+					<md-input-container class="width-100">
+						<label>First Name</label>
+						<input required name="firstname" maxlength="40" ng-model="user.first_name" />
+						<div ng-messages="updateUserForm.firstname.$error" role="alert">
+							<div ng-message="maxlength">Wow, that's a long name! First name must be less than 40 characters.</div>
+							<div ng-message="required">A first name is required.</div>
+						</div>
+					</md-input-container>
+					<md-input-container class="width-100">
+						<label>Last Name</label>
+						<input required name="lastname" maxlength="40" ng-model="user.last_name" />
+						<div ng-messages="updateUserForm.lastname.$error" role="alert">
+							<div ng-message="maxlength">Wow, that's a long name! Last name must be less than 40 characters.</div>
+							<div ng-message="required">A last name is required.</div>
+						</div>
+					</md-input-container>
+					<md-input-container class="width-100">
+						<label>Email</label>
+						<input required name="email" ng-model="user.email" minlength="10" maxlength="255" ng-pattern="/^.+@.+\..+$/" />
+						<div ng-messages="updateUserForm.email.$error" role="alert">
+							<div ng-message-exp="['required', 'pattern']">Must be a valid email address.</div>
+						</div>
+					</md-input-container>
+					<md-switch ng-model="user.is_admin" class="md-primary" ng-true-value="1" ng-false-value="0">Administrator</md-switch>
+				</div>
+			</div>
+		</md-dialog-content>
+		<md-dialog-actions layout="row">
+			<md-button ng-click="resetForm()">Reset</md-button>
+			<md-button class="md-primary" ng-click="updateUserForm.$valid && updateUser()">Save Changes</md-button>
+			<md-button class="md-warn" ng-click="confirmRemove(user)">Remove</md-button>
+		</md-dialog-actions>
+	</form>
+</md-dialog>

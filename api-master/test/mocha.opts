@@ -1,0 +1,5 @@
+./test/bootstrap.js
+./test/unit/**/*.test.js
+--reporter spec
+--recursive
+-t 8000

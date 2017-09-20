@@ -1,0 +1,29 @@
+<h1>Manage your account.</h1>
+<p>Fill out the form below to change your email address and/or password.</p>
+<div class="form md-inline-form">
+	<form name="newUserForm">
+		<md-input-container class="width-100">
+			<label>Email</label>
+			<input required name="email" ng-model="updatedUser.email" minlength="10" maxlength="255" ng-pattern="/^.+@.+\..+$/" />
+			<div ng-messages="newUserForm.email.$error" role="alert">
+				<div ng-message-exp="['required', 'pattern']">Must be a valid email address.</div>
+			</div>
+		</md-input-container>
+		<md-input-container class="width-100">
+			<label>Current Password</label>
+			<input required name="currentPassword" type="password" minlength="5" ng-model="updatedUser.current_password" />
+			<div ng-messages="newUserForm.currrentPassword.$error" role="alert">
+				<div ng-message="minlength">Password is at least five characters.</div>
+				<div ng-message="required">You must enter your password to save your changes.</div>
+			</div>
+		</md-input-container>
+		<md-input-container class="width-100">
+			<label>New Password</label>
+			<input name="newPassword" type="password" minlength="5" ng-model="updatedUser.new_password" />
+			<div ng-messages="newUserForm.newPassword.$error" role="alert">
+				<div ng-message="minlength">Password must be at least five characters.</div>
+			</div>
+		</md-input-container>
+		<md-button class="md-primary md-raised" ng-click="newUserForm.$valid && updateUser()" type="submit">Save Changes</md-button>
+	</form>
+</div>

@@ -1,0 +1,43 @@
+<ion-modal-view class="Scan-Settings">
+
+    <!-- Header Bar -->
+    <ion-header-bar align-title="center" class="bar-ims">
+        <a class="button button-icon icon ion-close" ng-click="vm.hideScanSettings()"></a>
+        <div class="title">Scan Settings</div>
+    </ion-header-bar>
+
+    <!-- Content -->
+    <ion-content>
+        <form name="vm.editScanSettingsForm" novalidate>
+            <ion-list class="modal-item">
+
+                <!-- Department -->
+                <label class="item">
+                    <span class="item-note">{{vm.scanSettings.department.name}}</span>
+                    <h2>Department</h2>
+                </label>
+
+                <!-- Building -->
+                <label class="item">
+                    <span class="item-note">{{vm.scanSettings.building.name}}</span>
+                    <h2>Building</h2>
+                </label>
+
+                <!-- Room -->
+                <label class="item">
+                    <span class="item-note">{{vm.scanSettings.room.number}}</span>
+                    <h2>Room</h2>
+                </label>
+
+                <!-- Scan Type -->
+                <label class="item">
+                    <span class="item-note">{{vm.scanSettings.scanType}}</span>
+                    <h2>Scan Type</h2>
+                </label>
+
+            </ion-list>
+        </form>
+        <!-- New Scan Button -->
+        <button class="button button-full button-outline button-ims-blue button-bottom" ng-click="vm.newScan()">New Scan</button>
+    </ion-content>
+</ion-modal-view>
