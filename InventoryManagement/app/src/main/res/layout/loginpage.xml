@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <TextView
+        android:id="@+id/Password_lbl"
+        android:layout_width="69dp"
+        android:layout_height="19dp"
+        android:text="Password"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="390dp"
+        android:layout_height="216dp"
+        app:srcCompat="@drawable/und_logo"
+        tools:layout_editor_absoluteY="43dp"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteY="259dp"
+        tools:layout_editor_absoluteX="121dp" />
+
+    <TextView
+        android:id="@+id/Username_lbl"
+        android:layout_width="69dp"
+        android:layout_height="19dp"
+        android:text="Username"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <TextView
+        android:id="@+id/cs492"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CSCI 492 2017"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="489dp" />
+
+</android.support.constraint.ConstraintLayout>
