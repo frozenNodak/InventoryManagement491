@@ -1,27 +1,49 @@
 {
-  "name": "und-ims",
-  "version": "0.0.1",
-  "description": "Inventory Management System",
-  "scripts": {
-    "build-production-windows": "npm run clean && npm run refresh && npm run build-android",
-    "build-production-mac": "npm run clean && npm run refresh && npm run build-android && npm run build-ios",
-    "build-android": "cordova build android",
-    "build-ios": "cordova build ios",
-    "build-dev-windows": "npm run refresh-dev && cordova build android",
-    "build-dev-mac": "npm run refresh-dev && cordova build android && cordova build ios",
-    "refresh": "npm install --production && bower install --production && ionic resources android && ionic resources ios && cordova prepare && grunt",
-    "refresh-dev": "npm install && bower install && ionic resources android && ionic resources ios && cordova prepare && grunt",
-    "clean": "rm -rf node_modules/ platforms/ plugins/ resources/android/ resources/ios/ www/lib/ www/dist/",
-    "web": "npm install && bower install && grunt && ionic serve"
-  },
-  "dependencies": {
-    "bower": "^1.8.0",
-    "grunt": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^1.0.2",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0"
-  },
-  "devDependencies": { }
+    "name": "und-ims",
+    "version": "0.0.1",
+    "description": "Inventory Management System",
+    "scripts": {
+        "build-production-windows": "npm run clean && npm run refresh && npm run build-android",
+        "build-production-mac": "npm run clean && npm run refresh && npm run build-android && npm run build-ios",
+        "build-android": "cordova build android",
+        "build-ios": "cordova build ios",
+        "build-dev-windows": "npm run refresh-dev && cordova build android",
+        "build-dev-mac": "npm run refresh-dev && cordova build android && cordova build ios",
+        "refresh": "npm install --production && bower install --production && ionic resources android && ionic resources ios && cordova prepare && grunt",
+        "refresh-dev": "npm install && bower install && ionic resources android && ionic resources ios && cordova prepare && grunt",
+        "clean": "rm -rf node_modules/ platforms/ plugins/ resources/android/ resources/ios/ www/lib/ www/dist/",
+        "web": "npm install && bower install && grunt && ionic serve"
+    },
+    "dependencies": {
+        "bower": "^1.8.0",
+        "grunt": "^1.0.1",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-cssmin": "^1.0.2",
+        "grunt-contrib-jshint": "^1.1.0",
+        "grunt-contrib-uglify": "^2.0.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "cordova-android": "~5.2.2",
+        "cordova-plugin-console": "~1.0.4",
+        "cordova-plugin-device": "~1.1.3",
+        "cordova-plugin-splashscreen": "~4.0.0",
+        "cordova-plugin-statusbar": "~2.2.0",
+        "cordova-plugin-whitelist": "~1.3.0",
+        "ionic-plugin-keyboard": "~2.2.1",
+        "phonegap-plugin-barcodescanner": "~6.0.3"
+    },
+    "devDependencies": {},
+    "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {
+            "cordova-plugin-console": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-whitelist": {},
+            "ionic-plugin-keyboard": {},
+            "phonegap-plugin-barcodescanner": {}
+        }
+    }
 }

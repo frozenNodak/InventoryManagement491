@@ -5,5 +5,7 @@
     "www/index.html",
     "www/**/*.html",
     "www/dist/*"
-  ]
+  ],
+  "integrations": {},
+  "type": "ionic1"
 }
