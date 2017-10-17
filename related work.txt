@@ -1,0 +1,19 @@
+List of related work:
+CSci secratary-what's curently being done 
+THD mobile - inventory app used by the housing mail room
+https://und.edu/identity/web-content-standards.cfm
+
+Sql - difrent types
+
+link - sql made simple
+
+google's bar code api - moble vision
+
+visual studio - .net *winner*
+
+adroid studio - 
+
+
+
+people of note:
+Jhon Nordly - talk about hooking up data base
