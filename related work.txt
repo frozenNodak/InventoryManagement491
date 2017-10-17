@@ -1,6 +1,9 @@
 List of related work:
+
 CSci secratary-what's curently being done 
+
 THD mobile - inventory app used by the housing mail room
+
 https://und.edu/identity/web-content-standards.cfm
 
 Sql - difrent types
@@ -16,4 +19,4 @@ adroid studio -
 
 
 people of note:
-Jhon Nordly - talk about hooking up data base
+John Nordlie - talk about hooking up data base
