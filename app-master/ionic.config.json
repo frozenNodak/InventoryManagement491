@@ -1,0 +1,11 @@
+{
+  "name": "und-ims",
+  "app_id": "",
+  "watchPatterns": [
+    "www/index.html",
+    "www/**/*.html",
+    "www/dist/*"
+  ],
+  "integrations": {},
+  "type": "ionic1"
+}

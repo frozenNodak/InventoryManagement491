@@ -1,0 +1,474 @@
+/* Color Palette */
+/* Mixins */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,700italic,400italic,300italic);
+* {
+  margin: 0; }
+
+body, html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased; }
+
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  -webkit-transition: 200ms linear all;
+  -moz-transition: 200ms linear all;
+  -ms-transition: 200ms linear all;
+  -o-transition: 200ms linear all;
+  transition: 200ms linear all;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  -webkit-transition-delay: 300ms;
+  -moz-transition-delay: 300ms;
+  transition-delay: 300ms;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+/* now the element will fade out before it is removed from the DOM */
+.fade.ng-leave {
+  -webkit-transition: 200ms linear all;
+  -moz-transition: 200ms linear all;
+  -ms-transition: 200ms linear all;
+  -o-transition: 200ms linear all;
+  transition: 200ms linear all;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+.fade.ng-leave.ng-leave-active {
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%; }
+  .container header {
+    display: block;
+    position: relative;
+    z-index: 48;
+    width: calc(100% - $nav-width);
+    margin-left: 250px;
+    background-color: #3F51B5;
+    padding: 30px 15px 30px 15px;
+    font-family: "Roboto", sans-serif;
+    color: #E8EAF6;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *zoom: 1;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    @media (max-width: 1030px) {
+      .container header {
+        margin-left: 0;
+        width: 100%; } }
+    .container header:before, .container header:after {
+      content: '';
+      display: table; }
+    .container header:after {
+      clear: both; }
+    .container header .headerContent {
+      display: block;
+      width: 100%;
+      margin-top: 4px;
+      margin-left: 8px;
+      font-size: 24px; }
+      @media (max-width: 1030px) {
+        .container header .headerContent {
+          font-size: 18px; } }
+      @media (max-width: 480px) {
+        .container header .headerContent {
+          font-size: 16px; } }
+    .container header #menu {
+      position: relative;
+      display: block;
+      float: left;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      border: none;
+      display: none;
+      cursor: pointer; }
+      @media (max-width: 1030px) {
+        .container header #menu {
+          display: block; } }
+      .container header #menu span {
+        position: relative;
+        display: block;
+        width: 15px;
+        height: 2px;
+        background-color: #E8EAF6;
+        margin: 0 auto; }
+        .container header #menu span:before {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 15px;
+          height: 2px;
+          background-color: #E8EAF6;
+          bottom: 5px;
+          -webkit-transition-property: bottom, transform;
+          -moz-transition-property: bottom, transform;
+          -ms-transition-property: bottom, transform;
+          -o-transition-property: bottom, transform;
+          transition-property: bottom, transform;
+          transition-duration: 300ms, 300ms;
+          transition-delay: 300ms, 0ms; }
+        .container header #menu span:after {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 15px;
+          height: 2px;
+          background-color: #E8EAF6;
+          top: 5px;
+          -webkit-transition-property: top, transform;
+          -moz-transition-property: top, transform;
+          -ms-transition-property: top, transform;
+          -o-transition-property: top, transform;
+          transition-property: top, transform;
+          transition-duration: 300ms, 300ms;
+          transition-delay: 300ms, 0ms; }
+        .container header #menu span:focus {
+          outline: none; }
+      .container header #menu.click span {
+        background: rgba(255, 255, 255, 0); }
+        .container header #menu.click span:before {
+          bottom: 0;
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          transition-delay: 0ms, 300ms; }
+        .container header #menu.click span:after {
+          top: 0;
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          transition-delay: 0ms, 300ms; }
+      .container header #menu:focus {
+        outline: none; }
+  .container nav {
+    display: block;
+    background-color: #FFFFFF;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-box-shadow: 10px 0px 14px -9px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 10px 0px 14px -9px rgba(0, 0, 0, 0.35);
+    box-shadow: 10px 0px 14px -9px rgba(0, 0, 0, 0.35);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media (max-width: 1030px) {
+      .container nav {
+        left: -250px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; }
+        .container nav.open {
+          left: 0;
+          -webkit-box-shadow: 10px 0px 14px -9px rgba(0, 0, 0, 0.35);
+          -moz-box-shadow: 10px 0px 14px -9px rgba(0, 0, 0, 0.35);
+          box-shadow: 10px 0px 14px -9px rgba(0, 0, 0, 0.35); } }
+    .container nav .undLogo {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      background-image: url("../images/flame-b-rgb.png");
+      background-size: cover;
+      display: block;
+      margin: 0 auto;
+      width: 75px;
+      height: 34px;
+      -moz-opacity: 0.5;
+      opacity: 0.5;
+      filter: alpha(opacity=50); }
+    .container nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .container nav ul li {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        border-bottom: 1px solid #E0E0E0; }
+        .container nav ul li a {
+          color: #212121;
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding-top: 20px;
+          padding-left: 8px;
+          padding-bottom: 20px; }
+          .container nav ul li a:hover {
+            color: #FF4081; }
+        .container nav ul li:first-child {
+          margin-top: none;
+          padding-top: none; }
+        .container nav ul li:last-child {
+          margin-bottom: none;
+          padding-bottom: none;
+          border-bottom: none; }
+  .container #navMask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 49;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    -moz-opacity: 0.25;
+    opacity: 0.25;
+    filter: alpha(opacity=25); }
+    .container #navMask.open {
+      display: block; }
+  .container .appContent {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    padding: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: calc(100% - $nav-width);
+    margin-left: 250px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    @media (max-width: 1030px) {
+      .container .appContent {
+        margin-left: 0;
+        width: 100%; } }
+    @media (max-width: 480px) {
+      .container .appContent {
+        padding: 20px; } }
+    .container .appContent md-input-container {
+      margin-bottom: 0; }
+    .container .appContent .form {
+      margin-top: 15px; }
+      .container .appContent .form .width-45 {
+        width: 47.5%; }
+      .container .appContent .form .width-100 {
+        display: block;
+        width: 96%; }
+    .container .appContent .inventory-search {
+      margin-top: 15px; }
+    .container .appContent h1 {
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #3F51B5;
+      margin-bottom: 25px; }
+      @media (max-width: 800px) {
+        .container .appContent h1 {
+          font-size: 18px;
+          margin-bottom: 20px; } }
+      .container .appContent h1.section-heading {
+        margin-top: 35px; }
+    .container .appContent .add-item {
+      float: right;
+      margin-top: 15px; }
+      .container .appContent .add-item:after {
+        display: block;
+        content: '';
+        clear: both; }
+
+md-dialog md-input-container {
+  margin-bottom: 0; }
+
+md-radio-button {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+  margin-right: 27px; }
+
+.radio-group-label {
+  display: inline-block;
+  margin-right: 27px;
+  font-weight: 700;
+}
+
+md-dialog .form {
+  margin-top: 15px; }
+  md-dialog .form .width-45 {
+    width: 47.5%; }
+  md-dialog .form .width-100 {
+    display: block;
+    width: 96%; }
+
+md-dialog button.md-button {
+  font-size: 12px;
+  font-weight: 700; }
+
+.inventoryGrid {
+  border: none;
+  margin-top: 25px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
+  .inventoryGrid .ui-grid-menu {
+    padding: 0;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
+  .inventoryGrid .ui-grid-menu-button {
+    background-color: transparent;
+    border: none;
+    width: 58px;
+    height: 58px; }
+    .inventoryGrid .ui-grid-menu-button .ui-grid-menu .ui-grid-menu-mid {
+      overflow: hidden; }
+    .inventoryGrid .ui-grid-menu-button .ui-grid-menu-inner {
+      background: #FFFFFF;
+      border: none; }
+      .inventoryGrid .ui-grid-menu-button .ui-grid-menu-inner ul li > button {
+        -webkit-transition: all 200ms ease-in-out;
+        -moz-transition: all 200ms ease-in-out;
+        -ms-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out; }
+      .inventoryGrid .ui-grid-menu-button .ui-grid-menu-inner ul li:not(:last-child) > button {
+        border-bottom: none; }
+      .inventoryGrid .ui-grid-menu-button .ui-grid-menu-inner ul li button:hover, .inventoryGrid .ui-grid-menu-button .ui-grid-menu-inner ul li button:focus {
+        background-color: #E0E0E0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; }
+      .inventoryGrid .ui-grid-menu-button .ui-grid-menu-inner .ui-grid-menu-close-button {
+        display: none; }
+    .inventoryGrid .ui-grid-menu-button .ui-grid-menu-item {
+      padding: 15px;
+      font-family: "Roboto", sans-serif;
+      font-size: 12px; }
+      .inventoryGrid .ui-grid-menu-button .ui-grid-menu-item:focus {
+        outline: none; }
+    .inventoryGrid .ui-grid-menu-button .ui-grid-icon-container {
+      margin: 0;
+      width: 100%;
+      height: 100%; }
+      .inventoryGrid .ui-grid-menu-button .ui-grid-icon-container:focus {
+        outline: none; }
+      .inventoryGrid .ui-grid-menu-button .ui-grid-icon-container i.ui-grid-icon-menu {
+        color: transparent;
+        display: block;
+        width: 14px;
+        height: 2px;
+        background-color: #E8EAF6;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; }
+        .inventoryGrid .ui-grid-menu-button .ui-grid-icon-container i.ui-grid-icon-menu:before {
+          position: absolute;
+          display: block;
+          width: 14px;
+          height: 2px;
+          background-color: #E8EAF6;
+          content: '';
+          top: -5px;
+          left: -3px; }
+        .inventoryGrid .ui-grid-menu-button .ui-grid-icon-container i.ui-grid-icon-menu:after {
+          position: absolute;
+          display: block;
+          width: 14px;
+          height: 2px;
+          background-color: #E8EAF6;
+          content: '';
+          top: 5px;
+          left: 0; }
+  .inventoryGrid .ui-grid-header {
+    border-bottom: none; }
+    .inventoryGrid .ui-grid-header .ui-grid-header-canvas {
+      background-color: #3F51B5;
+      font-family: "Roboto", sans-serif;
+      color: #E8EAF6; }
+      .inventoryGrid .ui-grid-header .ui-grid-header-canvas .ui-grid-header-cell {
+        padding: 15px;
+        border-right: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        .inventoryGrid .ui-grid-header .ui-grid-header-canvas .ui-grid-header-cell .ui-grid-column-menu-button {
+          display: none; }
+        .inventoryGrid .ui-grid-header .ui-grid-header-canvas .ui-grid-header-cell:last-child .ui-grid-column-resizer.right {
+          border-right: none; }
+        .inventoryGrid .ui-grid-header .ui-grid-header-canvas .ui-grid-header-cell .ui-grid-cell-contents {
+          padding: 5px; }
+          .inventoryGrid .ui-grid-header .ui-grid-header-canvas .ui-grid-header-cell .ui-grid-cell-contents:focus {
+            outline: none; }
+  .inventoryGrid .ui-grid-canvas .savedIndicator {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; }
+  .inventoryGrid .ui-grid-canvas .md-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 7px; }
+  .inventoryGrid .ui-grid-canvas .ui-grid-row:nth-child(odd) .ui-grid-cell {
+    background-color: #FFFFFF; }
+  .inventoryGrid .ui-grid-canvas .ui-grid-row:nth-child(even) .ui-grid-cell {
+    background-color: #F5F5F5; }
+  .inventoryGrid .ui-grid-canvas .ui-grid-cell {
+    border: none; }
+    .inventoryGrid .ui-grid-canvas .ui-grid-cell .md-grid-input-form {
+      padding: 0 15px 0 15px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .inventoryGrid .ui-grid-canvas .ui-grid-cell .md-grid-input-form .md-grid-input {
+        margin-top: 16px; }
+      .inventoryGrid .ui-grid-canvas .ui-grid-cell .md-grid-input-form input.ng-valid {
+        border-left: none;
+        border-right: none;
+        border-top: none; }
+    .inventoryGrid .ui-grid-canvas .ui-grid-cell .ui-grid-cell-contents {
+      padding: 18px; }
+      .inventoryGrid .ui-grid-canvas .ui-grid-cell .ui-grid-cell-contents.placeholder {
+        color: #9E9E9E; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+<ion-view view-title="User Information" class="User-Information">
+    <!-- <ion-nav-buttons side="right">
+        <a class="button button-icon icon ion-edit" ng-click="vm.editUser()"></a>
+    </ion-nav-buttons> -->
+    <ion-content>
+        <!-- <ion-refresher on-refresh="vm.onRefresh()"></ion-refresher> -->
+
+        <div ng-show="vm.render">
+
+            <!-- User Info -->
+            <ion-list>
+                <ion-item>
+                    <span class="item-note"> {{vm.user.firstName}} </span>
+                    <h2>First Name</h2>
+                </ion-item>
+                <ion-item>
+                    <span class="item-note"> {{vm.user.lastName}} </span>
+                    <h2>Last Name</h2>
+                </ion-item>
+                <ion-item>
+                    <span class="item-note"> {{vm.user.email}} </span>
+                    <h2>Email</h2>
+                </ion-item>
+                <ion-item>
+                    <span class="item-note"> {{vm.user.username}} </span>
+                    <h2>Username</h2>
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

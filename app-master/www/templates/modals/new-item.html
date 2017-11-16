@@ -1,0 +1,24 @@
+<ion-modal-view class="New-Item">
+
+    <!-- Header Bar -->
+    <ion-header-bar align-title="center" class="bar-ims">
+        <a class="button button-icon icon ion-close" ng-click="vm.hideNewItemModal()"></a>
+        <div class="title">New Item</div>
+        <a class="button button-icon icon ion-checkmark" ng-click="vm.confirmNewItem()" ng-disabled="vm.newItemForm.$invalid"></a>
+    </ion-header-bar>
+
+    <!-- Content -->
+    <ion-content>
+        <form name="vm.newItemForm" novalidate>
+            <ion-list class="modal-item">
+
+                <!-- Item Type -->
+                <label class="item item-select item-input">
+                    <h2 class="input-label">Item Type</h2>
+                        <select ng-options="type.name for type in vm.types" ng-model="vm.itemType" ng-required="true"></select>
+                </label>
+
+            </ion-list>
+        </form>
+    </ion-content>
+</ion-modal-view>

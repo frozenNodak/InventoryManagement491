@@ -1,0 +1,49 @@
+<h1>Manage users.</h1>
+<p>Below is a list of users within the system. To manage a user, simply click on their name and update their information.</p>
+<div class="users-list">
+	<md-list>
+        <md-list-item class="md-2-line" ng-repeat="user in users | orderBy: firstName" ng-click="showUpdateDialog(user)">
+         <img ng-src="{{ (user.is_admin == 1) ? 'images/contact-icon-pink.png' : 'images/contact-icon-indigo.png' }}" class="md-avatar" alt="{{ user.first_name }}" />
+          <div class="md-list-item-text">
+            <h3>{{ user.first_name }} {{ user.last_name }}</h3>
+            <p>{{ (user.is_admin == 1) ? "Administrator" : "User" }}</p>
+          </div>
+          <md-divider ng-show="!$last"></md-divider>
+        </md-list-item>
+	</md-list>
+	<md-button class="md-primary md-raised" ng-click="showAddDialog($event)">New User</md-button>
+</div>
+
+
+<!-- <h1 class="section-heading">New user.</h1>
+<p>Use the form below to add new users to the system. When a user is added to the system, they will get an email with a link and generated password. Upon sign in, they will be required to change their password.</p>
+<div class="form md-inline-form">
+	<form name="newUserForm">
+		<md-input-container class="width-100">
+			<label>First Name</label>
+			<input required name="firstname" maxlength="40" ng-model="newUser.first_name" />
+			<div ng-messages="newUserForm.firstname.$error" role="alert">
+				<div ng-message="maxlength">Wow, that's a long name! First name must be less than 40 characters.</div>
+				<div ng-message="required">A first name is required.</div>
+			</div>
+		</md-input-container>
+		<md-input-container class="width-100">
+			<label>Last Name</label>
+			<input required name="lastname" maxlength="40" ng-model="newUser.last_name" />
+			<div ng-messages="newUserForm.lastname.$error" role="alert">
+				<div ng-message="maxlength">Wow, that's a long name! Last name must be less than 40 characters.</div>
+				<div ng-message="required">A last name is required.</div>
+			</div>
+		</md-input-container>
+		<md-input-container class="width-100">
+			<label>Email</label>
+			<input required name="email" ng-model="newUser.email" minlength="10" maxlength="255" ng-pattern="/^.+@.+\..+$/" />
+			<div ng-messages="newUserForm.email.$error" role="alert">
+				<div ng-message-exp="['required', 'pattern']">Must be a valid email address.</div>
+			</div>
+		</md-input-container>
+		<md-switch class="md-primary" ng-true-value="1" ng-false-value="0">Administrator</md-switch>
+		<md-button class="md-primary md-raised" ng-click="newUserForm.$valid && addUser()">Add User</md-button>
+		<md-button class="md-raised" ng-click="resetForm()">Reset</md-button>
+	</form>
+</div> -->
