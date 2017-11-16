@@ -59,9 +59,9 @@ namespace InvetorySystem
                 b_search.Click += (sender, e) =>
                 {
 
-                //search through the database by Id or barcode scan
-                e_output.Text = "searching";
-                    //StartActivity(typeof(SearchInv));
+                    //search through the database by Id or barcode scan
+                    e_output.Text = "searching";
+                    StartActivity(typeof(SearchInventory));
                 };
             }
             if (b_Logout != null)

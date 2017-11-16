@@ -42,7 +42,6 @@ namespace InvetorySystem
                     StartActivity(typeof(LoginPage));
                 };
             }
-
         }
     }
 }
