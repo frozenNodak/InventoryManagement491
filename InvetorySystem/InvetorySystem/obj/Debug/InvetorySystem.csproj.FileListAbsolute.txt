@@ -1,0 +1,13 @@
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\InvetorySystem.csprojResolveAssemblyReference.cache
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\InvetorySystem.csproj.CoreCompileInputs.cache
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\bin\Debug\InvetorySystem.dll
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\bin\Debug\InvetorySystem.pdb
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\bin\Debug\InvetorySystem.InvetorySystem.apk
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\bin\Debug\InvetorySystem.InvetorySystem-Signed.apk
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\InvetorySystem.dll
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\InvetorySystem.pdb
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\android\bin\InvetorySystem.InvetorySystem.apk
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\layout\main.xml
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\values\strings.xml
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\R.cs.flag
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\uploadflags.txt
