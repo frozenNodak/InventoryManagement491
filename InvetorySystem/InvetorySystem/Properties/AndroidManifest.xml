@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="InvetorySystem.InvetorySystem" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="24" android:targetSdkVersion="25" />
-	<application android:allowBackup="true" android:label="@string/InventorySystem" android:icon="@drawable/undlogo"></application>
+	<application android:allowBackup="true" android:icon="@drawable/undlogo" android:label="Inventory Managment"></application>
 </manifest>

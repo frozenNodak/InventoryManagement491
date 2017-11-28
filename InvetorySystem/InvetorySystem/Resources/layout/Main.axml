@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray">
     <ImageView
-        android:src="@drawable/undlogo"
+        android:src="@drawable/InventManage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView1"
@@ -51,8 +51,9 @@
         android:visibility="invisible" />
     <Button
         android:text="Login"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:id="@+id/LoginButton"
         android:background="#009A44" />
     <TextView

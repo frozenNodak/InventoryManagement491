@@ -1,34 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <Button
-        android:text="Add Inventory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/AddInventory" />
-    <Button
-        android:text="Remove Inventory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/RemoveInventory" />
-    <Button
-        android:text="Update Inventory Info"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/UpdateInvInfo" />
-    <Button
-        android:text="Search"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Search" />
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <Button
+            android:text="Create Inventory"
+            android:layout_width="150sp"
+            android:layout_height="100sp"
+            android:id="@+id/AddInventory"
+            android:background="#009A44" />
+        <Button
+            android:text="Remove Inventory"
+            android:layout_width="150sp"
+            android:layout_height="100sp"
+            android:id="@+id/RemoveInventory"
+            android:layout_gravity="right"
+            android:background="#009A44" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <Button
+            android:text="Update Inventory Info"
+            android:layout_width="150sp"
+            android:layout_height="100sp"
+            android:id="@+id/UpdateInvInfo"
+            android:background="#009A44" />
+        <Button
+            android:text="Search"
+            android:layout_width="150sp"
+            android:layout_height="100sp"
+            android:id="@+id/Search"
+            android:layout_gravity="right"
+            android:background="#009A44" />
+    </LinearLayout>
     <Button
         android:text="Logout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Logout" />
-    <EditText
+        android:id="@+id/Logout"
+        android:background="#FF671F" />
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/output" />

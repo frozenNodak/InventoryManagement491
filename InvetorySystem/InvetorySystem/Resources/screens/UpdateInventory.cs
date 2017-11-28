@@ -6,7 +6,7 @@ using Android.OS;
 
 namespace InvetorySystem
 {
-    [Activity(Label = "Inventory System")]
+    [Activity(Label = "Inventory Management")]
     public class UpdateInventory : Activity
     {
         protected override void OnCreate(Bundle bundle)

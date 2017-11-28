@@ -6,7 +6,7 @@ using Android.OS;
 
 namespace InvetorySystem
 {
-    [Activity(Label = "Inventory System")]
+    [Activity(Label = "Inventory Management")]
     public class SearchInventory : Activity
     {
         protected override void OnCreate(Bundle bundle)
@@ -17,6 +17,7 @@ namespace InvetorySystem
             Button b_search = FindViewById<Button>(Resource.Id.SearchInv_num);
             Button b_goHome = FindViewById<Button>(Resource.Id.GoHome);
             Button logout = FindViewById<Button>(Resource.Id.Logout);
+            EditText uquipID = FindViewById<EditText>(Resource.Id.IDnum);
             TextView output = FindViewById<TextView>(Resource.Id.output);
 
             if (b_search != null)

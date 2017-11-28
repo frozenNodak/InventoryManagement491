@@ -6,7 +6,7 @@ using Android.OS;
 
 namespace InvetorySystem
 {
-    [Activity(Label = "Inventory System")]
+    [Activity(Label = "Inventory Management")]
     public class Home : Activity
     {
         protected override void OnCreate(Bundle bundle)
@@ -20,7 +20,7 @@ namespace InvetorySystem
             Button b_UpdateInv = FindViewById<Button>(Resource.Id.UpdateInvInfo);
             Button b_Logout = FindViewById<Button>(Resource.Id.Logout);
             Button b_search = FindViewById<Button>(Resource.Id.Search);
-            EditText e_output = FindViewById<EditText>(Resource.Id.output);
+            TextView e_output = FindViewById<TextView>(Resource.Id.output);
             e_output.Text = "";
             //var imageView = FindViewById<ImageView>(Resource.Id.demoImageView);
             //imageView.SetImageResource(Resource.Drawable.undlogo);
