@@ -1,0 +1,7 @@
+﻿X-Strip white spaces from password and username
+-add necessary input fields for each page
+-work on button formatting, possibly set up custom buttons for each one
+-add calendar icon to choose move and aquision dates. 
+-add quanities for like items. possible groupings?
+-check to make sure that quantity is available/exists before doing anything with it.
+X-change quantity +- button colors to a dark green and red

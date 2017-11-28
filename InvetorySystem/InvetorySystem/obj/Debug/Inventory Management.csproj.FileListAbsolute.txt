@@ -1,0 +1,22 @@
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\bin\Debug\InvetorySystem.dll
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\bin\Debug\InvetorySystem.pdb
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\bin\Debug\InvetorySystem.InvetorySystem.apk
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\bin\Debug\InvetorySystem.InvetorySystem-Signed.apk
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\Inventory Management.csprojResolveAssemblyReference.cache
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\Inventory Management.csproj.CoreCompileInputs.cache
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\InvetorySystem.dll
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\InvetorySystem.pdb
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\android\bin\InvetorySystem.InvetorySystem.apk
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\layout\home.xml
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\layout\removeinventory.xml
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\layout\updateinventory.xml
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\layout\searchinv.xml
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\layout\main.xml
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\values\strings.xml
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\drawable\undlogo.png
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\R.cs.flag
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\uploadflags.txt
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\drawable\inventmanage.png
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\res\layout\createinventory.xml
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\bin\Debug\InvetorySystem.dll.mdb
+C:\Users\david\Documents\cs 492\InvetorySystem\InvetorySystem\obj\Debug\android\assets\InvetorySystem.dll.mdb
