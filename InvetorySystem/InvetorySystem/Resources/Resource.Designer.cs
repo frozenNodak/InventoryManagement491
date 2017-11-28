@@ -87,11 +87,11 @@ namespace InvetorySystem
 			// aapt resource value: 0x7f050000
 			public const int IDnum = 2131034112;
 			
-			// aapt resource value: 0x7f050018
-			public const int LoginButton = 2131034136;
+			// aapt resource value: 0x7f05001a
+			public const int LoginButton = 2131034138;
 			
-			// aapt resource value: 0x7f050017
-			public const int LoginResult = 2131034135;
+			// aapt resource value: 0x7f050019
+			public const int LoginResult = 2131034137;
 			
 			// aapt resource value: 0x7f05000a
 			public const int Logout = 2131034122;
@@ -99,32 +99,32 @@ namespace InvetorySystem
 			// aapt resource value: 0x7f050006
 			public const int MoveDate = 2131034118;
 			
-			// aapt resource value: 0x7f050016
-			public const int PasswordText = 2131034134;
-			
-			// aapt resource value: 0x7f05001e
-			public const int RemInv_num = 2131034142;
-			
-			// aapt resource value: 0x7f05000f
-			public const int RemoveInventory = 2131034127;
-			
-			// aapt resource value: 0x7f050011
-			public const int Search = 2131034129;
-			
-			// aapt resource value: 0x7f05001f
-			public const int SearchInv_num = 2131034143;
-			
-			// aapt resource value: 0x7f050010
-			public const int UpdateInvInfo = 2131034128;
+			// aapt resource value: 0x7f050018
+			public const int PasswordText = 2131034136;
 			
 			// aapt resource value: 0x7f050020
-			public const int UpdateInv_num = 2131034144;
+			public const int RemInv_num = 2131034144;
+			
+			// aapt resource value: 0x7f050010
+			public const int RemoveInventory = 2131034128;
+			
+			// aapt resource value: 0x7f050013
+			public const int Search = 2131034131;
+			
+			// aapt resource value: 0x7f050021
+			public const int SearchInv_num = 2131034145;
+			
+			// aapt resource value: 0x7f050011
+			public const int UpdateInvInfo = 2131034129;
+			
+			// aapt resource value: 0x7f050022
+			public const int UpdateInv_num = 2131034146;
 			
 			// aapt resource value: 0x7f050002
 			public const int UsageRestriction = 2131034114;
 			
-			// aapt resource value: 0x7f050014
-			public const int UsernameText = 2131034132;
+			// aapt resource value: 0x7f050016
+			public const int UsernameText = 2131034134;
 			
 			// aapt resource value: 0x7f05000c
 			public const int acquiDatButton = 2131034124;
@@ -132,14 +132,14 @@ namespace InvetorySystem
 			// aapt resource value: 0x7f050004
 			public const int calendarView1 = 2131034116;
 			
+			// aapt resource value: 0x7f05001e
+			public const int equipQty = 2131034142;
+			
+			// aapt resource value: 0x7f050014
+			public const int imageView1 = 2131034132;
+			
 			// aapt resource value: 0x7f05001c
-			public const int equipQty = 2131034140;
-			
-			// aapt resource value: 0x7f050012
-			public const int imageView1 = 2131034130;
-			
-			// aapt resource value: 0x7f05001a
-			public const int linearLayout1 = 2131034138;
+			public const int linearLayout1 = 2131034140;
 			
 			// aapt resource value: 0x7f05000d
 			public const int moveDatButton = 2131034125;
@@ -147,20 +147,26 @@ namespace InvetorySystem
 			// aapt resource value: 0x7f05000b
 			public const int output = 2131034123;
 			
+			// aapt resource value: 0x7f05001f
+			public const int qtyMinus = 2131034143;
+			
 			// aapt resource value: 0x7f05001d
-			public const int qtyMinus = 2131034141;
+			public const int qtyPlus = 2131034141;
 			
-			// aapt resource value: 0x7f05001b
-			public const int qtyPlus = 2131034139;
+			// aapt resource value: 0x7f05000f
+			public const int space1 = 2131034127;
 			
-			// aapt resource value: 0x7f050013
-			public const int textView1 = 2131034131;
+			// aapt resource value: 0x7f050012
+			public const int space2 = 2131034130;
 			
 			// aapt resource value: 0x7f050015
-			public const int textView2 = 2131034133;
+			public const int textView1 = 2131034133;
 			
-			// aapt resource value: 0x7f050019
-			public const int textView3 = 2131034137;
+			// aapt resource value: 0x7f050017
+			public const int textView2 = 2131034135;
+			
+			// aapt resource value: 0x7f05001b
+			public const int textView3 = 2131034139;
 			
 			static Id()
 			{
