@@ -15,16 +15,19 @@
             android:layout_height="100sp"
             android:id="@+id/AddInventory"
             android:background="#009A44" />
-        <Space
-            android:layout_width="85sp"
-            android:id="@+id/space1" />
+        <ImageView
+            android:layout_width="10sp"
+            android:layout_height="10sp" />
         <Button
             android:text="Remove Inventory"
             android:layout_width="150sp"
             android:layout_height="100sp"
             android:id="@+id/RemoveInventory"
             android:layout_gravity="right"
-            android:background="#009A44" />
+            android:background="#009A44"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -36,17 +39,23 @@
             android:layout_width="150sp"
             android:layout_height="100sp"
             android:id="@+id/UpdateInvInfo"
-            android:background="#009A44" />
-        <Space
-            android:layout_width="85sp"
-            android:id="@+id/space2" />
+            android:background="#009A44"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1" />
+        <ImageView
+            android:layout_width="10sp"
+            android:layout_height="10sp" />
         <Button
             android:text="Search"
             android:layout_width="150sp"
             android:layout_height="100sp"
             android:id="@+id/Search"
             android:layout_gravity="right"
-            android:background="#009A44" />
+            android:background="#009A44"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1" />
     </LinearLayout>
     <Button
         android:text="Logout"

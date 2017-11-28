@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>11/28/2017 5:09:11 PM</xs:documentation>
+    <xs:documentation>11/28/2017 5:02:08 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -17003,8 +17003,6 @@
             <xs:enumeration value="@id/Search" />
             <xs:enumeration value="@id/SearchInv_num" />
             <xs:enumeration value="@id/serialNumber" />
-            <xs:enumeration value="@id/space1" />
-            <xs:enumeration value="@id/space2" />
             <xs:enumeration value="@id/textView1" />
             <xs:enumeration value="@id/textView2" />
             <xs:enumeration value="@id/textView3" />
