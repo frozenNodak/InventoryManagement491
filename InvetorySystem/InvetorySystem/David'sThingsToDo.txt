@@ -1,7 +1,9 @@
-﻿X-Strip white spaces from password and username
--add necessary input fields for each page
+﻿-add necessary input fields for each page - check from spreadsheet to make sure.
 -work on button formatting, possibly set up custom buttons for each one
 -add calendar icon to choose move and aquision dates. 
--add quanities for like items. possible groupings?
+-add quanities for like items. 
 -check to make sure that quantity is available/exists before doing anything with it.
-X-change quantity +- button colors to a dark green and red
+-lock input fields so it is only one line. shouldnt be able to enter into a new line. 
+-calendar buttons still not working. 
+-add button to clear entry fields
+-add a batch entry option(default?)

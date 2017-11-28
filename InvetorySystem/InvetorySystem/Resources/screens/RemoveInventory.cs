@@ -22,7 +22,7 @@ namespace InvetorySystem
             Button qtyMinus = FindViewById<Button>(Resource.Id.qtyMinus);
             EditText in_qty = FindViewById<EditText>(Resource.Id.equipQty);
             TextView output = FindViewById<TextView>(Resource.Id.output);
-
+            in_qty.Text = qty.ToString();
             if(qtyPlus != null)
             {
                 qtyPlus.Click += (sender, e) =>

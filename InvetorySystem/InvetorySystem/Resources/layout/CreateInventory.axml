@@ -4,86 +4,99 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray">
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/IDnum"
-        android:hint="Equipment ID #"
-        android:maxLength="9"
-        android:textColor="@android:color/black" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/EquipmentType"
-        android:hint="Equipment Type"
-        android:textColor="@android:color/black" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/UsageRestriction"
-        android:hint="Usage Restriction"
-        android:textColor="@android:color/black" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/AquisDate"
-        android:hint="Aquisition Date"
-        android:inputType="date"
-        android:textColor="@android:color/black" />
-    <CalendarView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/calendarView1"
-        android:visibility="gone" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/EquipDescription"
-        android:hint="Equipment Description"
-        android:textColor="@android:color/black" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/MoveDate"
-        android:hint="Move Date"
-        android:inputType="date"
-        android:textColor="@android:color/black" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/EquipCost"
-        android:hint="Equipment Cost"
-        android:textColor="@android:color/black" />
-    <Button
-        android:text="Create Inventory"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/AddInv_num"
-        android:background="#009A44" />
-    <Button
-        android:text="Home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/GoHome"
-        android:background="#009A44" />
-    <Button
-        android:text="Logout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Logout"
-        android:background="#FF671F" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/output" />
-    <Button
-        android:text="Pick aquisition Date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/acquiDatButton" />
-    <Button
-        android:text="Pick move Date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/moveDatButton" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/IDnum"
+      android:hint="Equipment ID #"
+      android:maxLength="9"
+      android:textColor="@android:color/black" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/EquipmentType"
+      android:hint="Equipment Type"
+      android:textColor="@android:color/black"
+      android:maxLength="30" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/serialNumber"
+      android:hint="Serial Number"
+      android:textColor="@android:color/black"
+      android:maxLength="30" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/AquisDate"
+      android:hint="Date Purchased"
+      android:inputType="date"
+      android:textColor="@android:color/black"
+      android:maxLength="15" />
+  <CalendarView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/calendarView1"
+      android:visibility="gone" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/EquipDescription"
+      android:hint="Equipment Description"
+      android:textColor="@android:color/black"
+      android:maxLength="100" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/equipQty"
+      android:hint="Equiptment Quantity"
+      android:textColor="@android:color/black"
+      android:maxLength="100" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/MoveDate"
+      android:hint="Move Date"
+      android:inputType="date"
+      android:textColor="@android:color/black"
+      android:maxLength="15" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/EquipCost"
+      android:hint="Equipment Cost"
+      android:textColor="@android:color/black"
+      android:maxLength="10" />
+  <Button
+      android:text="Create Inventory"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/AddInv_num"
+      android:background="#009A44" />
+  <Button
+      android:text="Home"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/GoHome"
+      android:background="#009A44" />
+  <Button
+      android:text="Logout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/Logout"
+      android:background="#FF671F" />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/output" />
+  <Button
+      android:text="Pick aquisition Date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/acquiDatButton" />
+  <Button
+      android:text="Pick move Date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/moveDatButton" />
 </LinearLayout>

@@ -24,7 +24,7 @@ namespace InvetorySystem
             TextView output = FindViewById<TextView>(Resource.Id.output);
             EditText equipID = FindViewById<EditText>(Resource.Id.IDnum);
             EditText equipType = FindViewById<EditText>(Resource.Id.EquipmentType);
-            EditText usageRestrict = FindViewById<EditText>(Resource.Id.UsageRestriction);
+            EditText serialNumber = FindViewById<EditText>(Resource.Id.serialNumber);
             EditText in_aquisDate = FindViewById<EditText>(Resource.Id.AquisDate);//datedisplay
             CalendarView calendar1 = FindViewById<CalendarView>(Resource.Id.calendarView1);
             EditText equipDesc = FindViewById<EditText>(Resource.Id.EquipDescription);
