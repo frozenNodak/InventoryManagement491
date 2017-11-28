@@ -15,6 +15,8 @@
             android:layout_height="100sp"
             android:id="@+id/AddInventory"
             android:background="#009A44" />
+        <Space
+            android:layout_width="85sp" />
         <Button
             android:text="Remove Inventory"
             android:layout_width="150sp"
@@ -34,6 +36,8 @@
             android:layout_height="100sp"
             android:id="@+id/UpdateInvInfo"
             android:background="#009A44" />
+        <Space
+            android:layout_width="85sp" />
         <Button
             android:text="Search"
             android:layout_width="150sp"
