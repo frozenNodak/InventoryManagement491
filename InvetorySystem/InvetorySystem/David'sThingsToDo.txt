@@ -8,3 +8,4 @@
 -add button to clear entry fields
 -add a batch entry option(default?)
 -add search result page
+-add labels in front of each entry so they know what it is while there is text there. 
