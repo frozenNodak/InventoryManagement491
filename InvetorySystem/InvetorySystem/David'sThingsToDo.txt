@@ -7,3 +7,4 @@
 -calendar buttons still not working. 
 -add button to clear entry fields
 -add a batch entry option(default?)
+-add search result page

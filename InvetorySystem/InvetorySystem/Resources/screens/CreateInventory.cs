@@ -19,8 +19,8 @@ namespace InvetorySystem
             Button b_add = FindViewById<Button>(Resource.Id.AddInv_num);
             Button b_goHome = FindViewById<Button>(Resource.Id.GoHome);
             Button logout = FindViewById<Button>(Resource.Id.Logout);
-            Button aquisSelecButton = FindViewById<Button>(Resource.Id.acquiDatButton);
-            Button moveDateButton = FindViewById<Button>(Resource.Id.moveDatButton);
+            //Button aquisSelecButton = FindViewById<Button>(Resource.Id.acquiDatButton);
+            //Button moveDateButton = FindViewById<Button>(Resource.Id.moveDatButton);
             TextView output = FindViewById<TextView>(Resource.Id.output);
             EditText equipID = FindViewById<EditText>(Resource.Id.IDnum);
             EditText equipType = FindViewById<EditText>(Resource.Id.EquipmentType);
