@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_bd7dc31a88f3e373b1dc677673e7184b0b3bc449\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\4e62d28ec64c13e33a4f603d72cbe9af679a3259\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_decdf95b6c25481dcd5b076222654055268eb65d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\b7c54976c75911d782b544ad4402acbcf7420879\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_94180aa6770b18232938689b1938cecf814641b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\f082a66e4c6fefb1fdc5b5b2d09b5efccfc96882\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f7f643e4e9fba7a6c1fde624bcc4324f39d7a28a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\5578cb1e2ce15fcf621c355457210a3718c565bc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2f6d3b64c4558135009e4e4ce6da5220fcc869f3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\de2fdb586ef5ac14539497f3e59f64bed83b93de\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_795759969b004902524211d21c7d8e9d793e0eb8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0e0ba00eb4ae0ad8b01a3cd349e855af81b1fe6d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\90321caf21c5765102d63490b93588c63edb289d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fba64335f5b3891819c162b76ce5780deca02383\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_d2335041cebffcfb85c7ebbd4dd8b4e9307c15c7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\e569635b7f78f0696fab97ba7f61b4eb2e6cd191\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1ab4065991307f1840b4daa06f8bc25f47da15d6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c601b1bd94139e5189b03d596dc312ab4163872d">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_eff60b2baa4c2f30300ff7f762251693d99eb3db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\5a65d5999ebddb8cd242f56f37d67fe0be6ff3e9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6734f0fa6019f4ba51684204196ed271b3dacdc4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\3968b66d85729329a7562d429cd3b90c07118d4a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d9055a5331f5629ea3da6f674504faa072684af6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\c153c2f5277c6c97fee8f907bd62547fa787ae29\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1ab6abdfa4dec33b288dc3d4b61e4b842b378397\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\608ccfbc4f26c1559f5763ef2b45329658a22775\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_214e3c6519bba44fa2518853d5f52b1d31da638c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\010b7aadc3848036c48e29e12ecdb607a6472e2e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7bd5d490a28975a10101e107814095a7dab02a21\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\David\.android\build-cache\07ad3500a5acae817e3fa2c357018ef9540f00ba\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Users\David\Documents\cs 492\InventoryManagement\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b1e2002dd45e54251364017537012809eccddd14\classes.dex" />
+    </item>
+
+</items>
