@@ -34,7 +34,7 @@
                 Equipment can be removed by providing the equipment ID, reason for removal, and proper authorization. 
             </p>
             <p>
-                <a class="btn btn-default" href="">Delete Inventory &raquo;</a>
+                <a class="btn btn-default" href="DeleteInventory.aspx">Delete Inventory &raquo;</a>
             </p>
         </div>
          <div class="col-md-4">
@@ -43,7 +43,7 @@
                 Equipment can be Update with a scan of the barcode. Fields that can be updated are:Status, Location, and User. (ANYTHING ELSE?)
             </p>
             <p>
-                <a class="btn btn-default" href="">Update Inventory &raquo;</a>
+                <a class="btn btn-default" href="UpdateInventory.aspx">Update Inventory &raquo;</a>
             </p>
         </div>
          <div class="col-md-4">
@@ -52,7 +52,7 @@
                 Equipment can be located by providing the Equipment ID, or through the search feature. 
             </p>
             <p>
-                <a class="btn btn-default" href="">Locate Inventory &raquo;</a>
+                <a class="btn btn-default" href="LocateInventory.aspx">Locate Inventory &raquo;</a>
             </p>
         </div>
          <div class="col-md-4">
@@ -61,7 +61,7 @@
                 Equipment can be disabled in the event of a malfunction. (IS THIS NECESSARY?) 
             </p>
             <p>
-                <a class="btn btn-default" href="">Disable Inventory &raquo;</a>
+                <a class="btn btn-default" href="DisableInventory.aspx">Disable Inventory &raquo;</a>
             </p>
         </div>
          <div class="col-md-4">
@@ -70,7 +70,7 @@
                 You are able to print out a report of the current status of the equipment.  (THIS WILL HAVE TO HAVE SPECIAL PERMISSIONS)
             </p>
             <p>
-                <a class="btn btn-default" href="">Print Report &raquo;</a>
+                <a class="btn btn-default" href="AuditReport.aspx">Print Report &raquo;</a>
             </p>
         </div>
     </div>

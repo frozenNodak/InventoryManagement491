@@ -6814,3 +6814,8 @@ td.visible-print {
     display: none !important;
   }
 }
+
+.txtBox {
+    display: inline;
+    text-align:right;
+}
