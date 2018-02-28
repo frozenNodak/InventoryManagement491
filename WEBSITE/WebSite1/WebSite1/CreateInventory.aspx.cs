@@ -20,7 +20,7 @@ public partial class About : Page
         try
         {
             string[] datas = Spire.Barcode.BarcodeScanner.Scan(@"C:\Users\David\Documents\cs 492\WEBSITE\WebSite1\bc_M158566.png");
-            this.tb_TagNumber.Text = datas[0];
+            tb_TagNumber.Text = datas[0];
         }
         catch (Exception ex)
         {
