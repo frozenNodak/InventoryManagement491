@@ -3,82 +3,118 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
     <h3>Scan in the barcode and/or enter in the necessary information.</h3>
-    <p> <asp:Label ID="lbl_warning" runat="server" Text="" ForeColor="Red"></asp:Label></p>
+    <p>(FOR NOW) If scanning is not available, enter in the necessary information manually.</p>
 
-    <asp:Button ID="bt_EquipID" runat="server" Text="Scan Barcode" OnClick="bt_EquipID_Click"></asp:Button>
-    <asp:Button ID="bt_CreateBarcode" runat="server" Text="Create Barcode" OnClick="bt_CreateBC_Click"></asp:Button><br />
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_TagNumber" runat="server" Text="Tag Number:"></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 20%;">
+            <asp:TextBox ID="tb_TagNumber" runat="server" MaxLength="7" Style="width:175px;"></asp:TextBox>
+        </div>
+        <div class="column" style="float: left; width: 10%;">
+            <asp:Button ID="bt_TagNumber" runat="server" Text="Scan Barcode" OnClick="bt_TagNumber_Click"></asp:Button>
+        </div>
+        <div class="column" style="float: left; width: 10%;">
+            <asp:Button ID="bt_CreateBarcode" runat="server" Text="Create Barcode" OnClick="bt_TagNumber_Click"></asp:Button>
+        </div>
+    </div>
 
-    <asp:Label ID="lbl_TagNumber" runat="server" Text="Tag Number: " AssociatedControlID="tb_TagNumber"></asp:Label>
-    <asp:TextBox ID="tb_TagNumber"  runat="server" CssClass="txtBox"></asp:TextBox><br />
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_SerialNumber" runat="server" Text="Serial Number:"></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 15%;">
+            <asp:TextBox ID="tb_SerialNumber" runat="server" Style="width:175px;" MaxLength="22"></asp:TextBox>
+        </div>
+    </div>
 
-    <asp:Label ID="lbl_SerialNum" runat="server" Text="Serial Number: " AssociatedControlID="tb_SerialNum"></asp:Label>
-    <asp:TextBox ID="tb_SerialNum"  runat="server" CssClass="txtBox"></asp:TextBox><br />
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_Description" runat="server" Text="Description:"></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 30%;">
+            <asp:TextBox ID="tb_Description" runat="server" Style="width:175px;" MaxLength="50"></asp:TextBox>
+        </div>
+    </div>
 
-    <asp:Label ID="lbl_Description" runat="server" Text="Equipment Description: " AssociatedControlID="tb_Description"></asp:Label>
-    <asp:TextBox ID="tb_Description"  runat="server" CssClass="txtBox"></asp:TextBox><br />
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_NumberPurchased" runat="server" Text="Number Purchased:"></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 30%;">
+            <asp:TextBox ID="tb_NumberPurchased" runat="server" Style="width:175px;" MaxLength="50"></asp:TextBox>
+        </div>
+    </div>
 
-    <asp:Label ID="lbl_Qty" runat="server" Text="Equipment Quantity: " AssociatedControlID="tb_Qty"></asp:Label>
-    <asp:TextBox ID="tb_Qty"  runat="server" CssClass="txtBox"></asp:TextBox><br />
+    <%--<div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_EquipType" runat="server" Text="Equipment Type: "></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 20%;">
+            <asp:DropDownList ID="ddl_EquipType" Style="width:175px;" runat="server"  Width="125px">
+                <asp:ListItem>Electrical</asp:ListItem>
+                <asp:ListItem>Electric</asp:ListItem>
+                <asp:ListItem>Analog</asp:ListItem>
+                <asp:ListItem>Chair</asp:ListItem>
+                <asp:ListItem>Table</asp:ListItem>
+                <asp:ListItem>Other</asp:ListItem>
+            </asp:DropDownList>
 
-    <asp:Label ID="lbl_CostPer" runat="server" Text="Cost Per Item: $" AssociatedControlID="tb_CostPer"></asp:Label>
-    <asp:TextBox ID="tb_CostPer"  runat="server" CssClass="txtBox"></asp:TextBox><br />
-    <%--if cost per item is <5000 then it is minor --%>
+        </div>
+    </div>--%>
 
-    <asp:Label ID="lbl_OGEquipCost" runat="server" Text="Total Original Cost: $" AssociatedControlID="tb_OGEquipmentCost"></asp:Label>
-    <asp:TextBox ID="tb_OGEquipmentCost"  runat="server" CssClass="txtBox"></asp:TextBox><br />
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_PurchaseDate" runat="server" Text="Purchase Date: "></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 15%;">
+            <asp:TextBox ID="tb_PurchaseDate" runat="server" TextMode="DateTime" Style="width: 175px;"></asp:TextBox><%--TODO: Find a date picker to use instead--%>
+        </div>
+    </div>
 
-    <asp:Label ID="lbl_ReplaceCostPer" runat="server" Text="Replacement Cost Per Item: $" AssociatedControlID="tb_ReplaceCostPer"></asp:Label>
-    <asp:TextBox ID="tb_ReplaceCostPer"  runat="server" CssClass="txtBox"></asp:TextBox><br />
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_EquipCost" runat="server" Text="Equipment Cost:"></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 15%;">
+            <asp:TextBox ID="tb_EquipmentCost" runat="server" Style="width:175px;"></asp:TextBox>
+        </div>
+    </div>
+
     
-    <asp:Label ID="lbl_TotalRepCostPer" runat="server" Text="Total Replacement Cost: $" AssociatedControlID="tb_TotalRepCostPer"></asp:Label>
-    <asp:TextBox ID="tb_TotalRepCostPer"  runat="server" CssClass="txtBox"></asp:TextBox><br />
-    
-    <asp:Label ID="lbl_LocationID" runat="server" Text="Equipment LocationID: " AssociatedControlID="tb_LocationID"></asp:Label>
-    <asp:TextBox ID="tb_LocationID"  runat="server" CssClass="txtBox"></asp:TextBox><br />
-    
-    <asp:Label ID="lbl_Building" runat="server" Text="Building: " AssociatedControlID="tb_Building"></asp:Label>
-    <asp:TextBox ID="tb_Building"  runat="server" CssClass="txtBox"></asp:TextBox><br />
-    
-    <asp:Label ID="lbl_RoomNum" runat="server" Text="Room Number: " AssociatedControlID="tb_RoomNum"></asp:Label>
-    <asp:TextBox ID="tb_RoomNum"  runat="server" CssClass="txtBox"></asp:TextBox><br />
-    
-    <asp:Label ID="lbl_Department" runat="server" Text="Department: " AssociatedControlID="tb_Department"></asp:Label>
-    <asp:TextBox ID="tb_Department"  runat="server" CssClass="txtBox"></asp:TextBox><br />
 
-   
-    
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_ReplacementCost" runat="server" Text="Replacement Cost Per Item: "></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 15%;">
+            <asp:TextBox ID="tb_ReplasementCost" runat="server" TextMode="DateTime" Style="width: 175px;"></asp:TextBox>
+        </div>
+    </div>
 
-    <asp:Label ID="lbl_AquisDate" runat="server" Text="Acquisition Date: " AssociatedControlID="tb_AquisDate"></asp:Label>
-    <asp:TextBox ID="tb_AquisDate" runat="server" TextMode="DateTime" CssClass="txtBox"></asp:TextBox><br />
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_Minor" runat="server" Text="Is Equipment Minor?"></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 15%;">
+            <asp:CheckBox ID="cb_Minor" runat="server" Text=" Yes" />
+        </div>
+    </div>
 
-    <asp:Label ID="lbl_UserID" runat="server" Text="User ID: " AssociatedControlID="tb_UserID"></asp:Label>
-    <asp:TextBox ID="tb_UserID" runat="server" CssClass="txtBox"></asp:TextBox><br />
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_Location" runat="server" Text="Location: "></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 15%;">
+            <asp:DropDownList ID="ddl_Location" Style="width:175px;" runat="server"  Width="125px" />  <%--TODO: Bind locations from DB--%>
+        </div>
+    </div>
 
-    <asp:Label ID="lbl_UseRestrict" runat="server" Text="Usage Restriction: " AssociatedControlID="tb_UseRestrict"></asp:Label>
-    <asp:TextBox ID="tb_UseRestrict"  runat="server" CssClass="txtBox"></asp:TextBox><br />
-
-
-   <%-- <asp:Label ID="lbl_equiptype" runat="server" Text="equipment type: "></asp:Label>
-    <asp:DropDownList ID="ddl_equiptype" Style="margin-left: 50px" runat="server" Height="19px" Width="125px" CssClass="txtbox">
-        <asp:ListItem>electrical</asp:ListItem>
-        <asp:ListItem>electric</asp:ListItem>
-        <asp:ListItem>analog</asp:ListItem>
-        <asp:ListItem>chair</asp:ListItem>
-        <asp:ListItem>table</asp:ListItem>
-        <asp:ListItem>other</asp:ListItem>
-    </asp:DropDownList><br>
-
-
-    <asp:Label ID="lbl_Admin" runat="server" Text="Administrator: "></asp:Label>
-    <asp:TextBox ID="tb_Admin" runat="server" CssClass="txtBox"></asp:TextBox><br />
-
-    <asp:Label ID="lbl_ProjectID" runat="server" Text="Project ID: "></asp:Label>
-    <asp:TextBox ID="tb_ProjectID" runat="server" CssClass="txtBox"></asp:TextBox><br />
-
-
-
-    <asp:Label ID="lbl_AdminName" runat="server" Text="Administrators Name: "></asp:Label>
-    <asp:TextBox ID="tb_AdminName" runat="server" CssClass="txtBox"></asp:TextBox><br />--%>
-
-    <asp:Button ID="btn_Submit" runat="server" Text="Submit Info" OnClick="Btn_Submit_Click" />
+    <br />
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Button ID="btn_Submit" runat="server" Text="Submit Info" OnClick="btn_Submit_Click" />
+        </div>
+    </div>
 </asp:Content>
