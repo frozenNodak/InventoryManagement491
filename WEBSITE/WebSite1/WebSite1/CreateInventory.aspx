@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
     <h3>Scan in the barcode and/or enter in the necessary information.</h3>
-    <p>(FOR NOW) If scanning is not available, enter in the necessary information manually.</p>
+    <p></p>
 
     <div class="row">
         <div class="column" style="float: left; width: 20%;">
@@ -13,10 +13,10 @@
             <asp:TextBox ID="tb_TagNumber" runat="server" MaxLength="7" Style="width:175px;"></asp:TextBox>
         </div>
         <div class="column" style="float: left; width: 10%;">
-            <asp:Button ID="bt_TagNumber" runat="server" Text="Scan Barcode" OnClick="bt_TagNumber_Click"></asp:Button>
+            <asp:Button ID="bt_TagNumber" runat="server" Text="Scan Barcode" OnClick="Bt_TagNumber_Click"></asp:Button>
         </div>
         <div class="column" style="float: left; width: 10%;">
-            <asp:Button ID="bt_CreateBarcode" runat="server" Text="Create Barcode" OnClick="bt_TagNumber_Click"></asp:Button>
+            <asp:Button ID="bt_CreateBarcode" runat="server" Text="Create Barcode" OnClick="Bt_TagNumber_Click"></asp:Button>
         </div>
     </div>
 
@@ -114,7 +114,7 @@
     <br />
     <div class="row">
         <div class="column" style="float: left; width: 20%;">
-            <asp:Button ID="btn_Submit" runat="server" Text="Submit Info" OnClick="btn_Submit_Click" />
+            <asp:Button ID="btn_Submit" runat="server" Text="Submit Info" OnClick="Btn_Submit_Click" />
         </div>
     </div>
 </asp:Content>
