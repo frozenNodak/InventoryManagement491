@@ -1,7 +1,47 @@
 USE [InventoryManagementSystem]
 GO
 
-/****** Object:  StoredProcedure [dbo].[IMS_Delete_Equipment]    Script Date: 2/28/2018 12:56:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[IMS_Update_Location]    Script Date: 2/28/2018 12:57:05 PM ******/
+DROP PROCEDURE [dbo].[IMS_Update_Location]
+GO
+
+/****** Object:  StoredProcedure [dbo].[IMS_Update_Equipment]    Script Date: 2/28/2018 12:57:05 PM ******/
+DROP PROCEDURE [dbo].[IMS_Update_Equipment]
+GO
+
+/****** Object:  StoredProcedure [dbo].[IMS_Select_Location]    Script Date: 2/28/2018 12:57:05 PM ******/
+DROP PROCEDURE [dbo].[IMS_Select_Location]
+GO
+
+/****** Object:  StoredProcedure [dbo].[IMS_Select_Equipment]    Script Date: 2/28/2018 12:57:05 PM ******/
+DROP PROCEDURE [dbo].[IMS_Select_Equipment]
+GO
+
+/****** Object:  StoredProcedure [dbo].[IMS_Insert_Location]    Script Date: 2/28/2018 12:57:05 PM ******/
+DROP PROCEDURE [dbo].[IMS_Insert_Location]
+GO
+
+/****** Object:  StoredProcedure [dbo].[IMS_Insert_Equipment]    Script Date: 2/28/2018 12:57:05 PM ******/
+DROP PROCEDURE [dbo].[IMS_Insert_Equipment]
+GO
+
+/****** Object:  StoredProcedure [dbo].[IMS_Get_Select_Location]    Script Date: 2/28/2018 12:57:05 PM ******/
+DROP PROCEDURE [dbo].[IMS_Get_Select_Location]
+GO
+
+/****** Object:  StoredProcedure [dbo].[IMS_Get_Select_Equipment]    Script Date: 2/28/2018 12:57:05 PM ******/
+DROP PROCEDURE [dbo].[IMS_Get_Select_Equipment]
+GO
+
+/****** Object:  StoredProcedure [dbo].[IMS_Delete_Location]    Script Date: 2/28/2018 12:57:05 PM ******/
+DROP PROCEDURE [dbo].[IMS_Delete_Location]
+GO
+
+/****** Object:  StoredProcedure [dbo].[IMS_Delete_Equipment]    Script Date: 2/28/2018 12:57:05 PM ******/
+DROP PROCEDURE [dbo].[IMS_Delete_Equipment]
+GO
+
+/****** Object:  StoredProcedure [dbo].[IMS_Delete_Equipment]    Script Date: 2/28/2018 12:57:05 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -23,7 +63,7 @@ DELETE FROM dbo.Equipment
 WHERE EquipmentID = @EquipmentID
 GO
 
-/****** Object:  StoredProcedure [dbo].[IMS_Delete_Location]    Script Date: 2/28/2018 12:56:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[IMS_Delete_Location]    Script Date: 2/28/2018 12:57:05 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -45,7 +85,7 @@ DELETE FROM dbo.Location
 WHERE LocationID = @LocationID
 GO
 
-/****** Object:  StoredProcedure [dbo].[IMS_Get_Select_Equipment]    Script Date: 2/28/2018 12:56:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[IMS_Get_Select_Equipment]    Script Date: 2/28/2018 12:57:05 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -81,7 +121,7 @@ FROM dbo.Equipment
 WHERE EquipmentID = @EquipmentID
 GO
 
-/****** Object:  StoredProcedure [dbo].[IMS_Get_Select_Location]    Script Date: 2/28/2018 12:56:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[IMS_Get_Select_Location]    Script Date: 2/28/2018 12:57:05 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -109,7 +149,7 @@ FROM dbo.Location
 WHERE LocationID = @LocationID
 GO
 
-/****** Object:  StoredProcedure [dbo].[IMS_Insert_Equipment]    Script Date: 2/28/2018 12:56:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[IMS_Insert_Equipment]    Script Date: 2/28/2018 12:57:05 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -167,7 +207,7 @@ VALUES (
 SET @EquipmentID = SCOPE_IDENTITY()
 GO
 
-/****** Object:  StoredProcedure [dbo].[IMS_Insert_Location]    Script Date: 2/28/2018 12:56:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[IMS_Insert_Location]    Script Date: 2/28/2018 12:57:05 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -204,7 +244,7 @@ VALUES (
 SET @LocationID = SCOPE_IDENTITY()
 GO
 
-/****** Object:  StoredProcedure [dbo].[IMS_Select_Equipment]    Script Date: 2/28/2018 12:56:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[IMS_Select_Equipment]    Script Date: 2/28/2018 12:57:05 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -238,7 +278,7 @@ SELECT
 FROM dbo.Equipment
 GO
 
-/****** Object:  StoredProcedure [dbo].[IMS_Select_Location]    Script Date: 2/28/2018 12:56:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[IMS_Select_Location]    Script Date: 2/28/2018 12:57:05 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -264,7 +304,7 @@ SELECT
 FROM dbo.Location
 GO
 
-/****** Object:  StoredProcedure [dbo].[IMS_Update_Equipment]    Script Date: 2/28/2018 12:56:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[IMS_Update_Equipment]    Script Date: 2/28/2018 12:57:05 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -308,7 +348,7 @@ SET
 WHERE EquipmentID = @EquipmentID
 GO
 
-/****** Object:  StoredProcedure [dbo].[IMS_Update_Location]    Script Date: 2/28/2018 12:56:48 PM ******/
+/****** Object:  StoredProcedure [dbo].[IMS_Update_Location]    Script Date: 2/28/2018 12:57:05 PM ******/
 SET ANSI_NULLS ON
 GO
 

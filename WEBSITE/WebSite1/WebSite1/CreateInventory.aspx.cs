@@ -42,7 +42,6 @@ public partial class About : Page
             var costPer = tb_EquipmentCost.Text != string.Empty ? Convert.ToDecimal(tb_EquipmentCost.Text) : 0;
             var qty = tb_NumberPurchased.Text != string.Empty ? Convert.ToInt32(tb_NumberPurchased.Text) : 0;
             bool IsMinor = false;
-            var errorSpot = "";
             if (costPer < 5000)
             {
                 IsMinor = true;
@@ -60,10 +59,7 @@ public partial class About : Page
                 ReplaceCostPerItem = tb_ReplasementCost.Text != string.Empty ? Convert.ToDecimal(tb_ReplasementCost.Text) : 0,
                 TotalReplaceCost = tb_ReplasementCost.Text != string.Empty ? Convert.ToDecimal(tb_ReplasementCost.Text) * qty : 0,
                 Minor = IsMinor,
-                LocationID = ddl_Location.SelectedValue != string.Empty ? Convert.ToInt32(ddl_Location.SelectedValue) : 0,
-                Building = ddl_Building.SelectedValue,
-                RoomNumber = ddl_RoomNumber.SelectedValue,
-                Department = ddl_Department.SelectedValue
+                LocationID = ddl_Location.SelectedValue != string.Empty ? Convert.ToInt32(ddl_Location.SelectedValue) : 0
             };
         }
         catch (ArgumentNullException agex)
