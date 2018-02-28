@@ -1,9 +1,11 @@
 ﻿<%@ Page Title="Create Inventory" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="CreateInventory.aspx.cs" Inherits="About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Scan in the barcode and/or enter in the necessary information.</h3>
-    <p></p>
+    <div class="row">
+        <h2><%: Title %>.</h2>
+        <h3>Scan in the barcode and/or enter in the necessary information.</h3>
+        <p><asp:Label ID="lbl_warning" runat="server" Text="" ForeColor="red"></asp:Label></p>
+    </div>
 
     <div class="row">
         <div class="column" style="float: left; width: 20%;">
@@ -93,14 +95,14 @@
         </div>
     </div>
 
-    <div class="row">
+<%--    <div class="row">
         <div class="column" style="float: left; width: 20%;">
             <asp:Label ID="lbl_Minor" runat="server" Text="Is Equipment Minor?"></asp:Label>
         </div>
         <div class="column" style="float: left; width: 15%;">
             <asp:CheckBox ID="cb_Minor" runat="server" Text=" Yes" />
         </div>
-    </div>
+    </div>--%><%--Calculate minor by item cost--%>
 
     <div class="row">
         <div class="column" style="float: left; width: 20%;">
@@ -111,10 +113,38 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_Building" runat="server" Text="Building: "></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 15%;">
+            <asp:DropDownList ID="ddl_Building" Style="width:175px;" runat="server"  Width="125px" />  <%--TODO: Bind Building from DB?--%>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_RoomNumber" runat="server" Text="Room Number: "></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 15%;">
+            <asp:DropDownList ID="ddl_RoomNumber" Style="width:175px;" runat="server"  Width="125px" />  <%--TODO: Bind RoomNumbers from DB?--%>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column" style="float: left; width: 20%;">
+            <asp:Label ID="lbl_Department" runat="server" Text="Department: "></asp:Label>
+        </div>
+        <div class="column" style="float: left; width: 15%;">
+            <asp:DropDownList ID="ddl_Department" Style="width:175px;" runat="server"  Width="125px" />  <%--TODO: Bind locations from DB--%>
+        </div>
+    </div>
+
     <br />
     <div class="row">
         <div class="column" style="float: left; width: 20%;">
             <asp:Button ID="btn_Submit" runat="server" Text="Submit Info" OnClick="Btn_Submit_Click" />
         </div>
     </div>
+
 </asp:Content>
