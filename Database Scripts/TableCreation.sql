@@ -1,7 +1,7 @@
 USE [InventoryManagementSystem]
 GO
 
-/****** Object:  Table [dbo].[Equipment]    Script Date: 2/27/2018 11:28:13 PM ******/
+/****** Object:  Table [dbo].[Equipment]    Script Date: 2/28/2018 12:57:23 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -11,7 +11,7 @@ GO
 CREATE TABLE [dbo].[Equipment](
 	[EquipmentID] [int] NOT NULL,
 	[TagNumber] [varchar](7) NULL,
-	[SerialNumber] [varchar](22) NULL,
+	[SerialNumber] [varchar](25) NULL,
 	[Description] [varchar](50) NULL,
 	[NumberPurchased] [int] NULL,
 	[DatePurchased] [date] NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE [dbo].[Equipment](
 ) ON [PRIMARY]
 GO
 
-/****** Object:  Table [dbo].[Location]    Script Date: 2/27/2018 11:28:13 PM ******/
+/****** Object:  Table [dbo].[Location]    Script Date: 2/28/2018 12:57:23 PM ******/
 SET ANSI_NULLS ON
 GO
 
