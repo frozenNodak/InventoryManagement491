@@ -17,15 +17,15 @@ public partial class About : Page
 
     protected void Bt_TagNumber_Click(object sender, EventArgs e)
     {
-        try
-        {
-            string[] datas = Spire.Barcode.BarcodeScanner.Scan(@"C:\Users\David\Documents\cs 492\WEBSITE\WebSite1\bc_M158566.png");
-            this.tb_TagNumber.Text = datas[0];
-        }
-        catch (Exception ex)
-        {
-            this.tb_TagNumber.Text = "Error: " + ex.Message;
-        }
+        //try
+        //{
+        //    string[] datas = Spire.Barcode.BarcodeScanner.Scan(@"C:\Users\David\Documents\cs 492\WEBSITE\WebSite1\bc_M158566.png");
+        //    this.tb_TagNumber.Text = datas[0];
+        //}
+        //catch (Exception ex)
+        //{
+        //    this.tb_TagNumber.Text = "Error: " + ex.Message;
+        //}
     }
 
     protected void Bt_CreateBC_Click(object sender, EventArgs e)
