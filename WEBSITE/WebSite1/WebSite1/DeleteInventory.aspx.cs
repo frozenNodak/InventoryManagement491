@@ -19,6 +19,7 @@ public partial class About : Page
         System.ArgumentNullException argEx = new ArgumentNullException();
         try
         {
+            var UserID = tb_UserID.Text != string.Empty ? tb_UserID.Text : throw argEx;//required
             //build Equipment Object and convert types
             EquipObj newEquip = new EquipObj
             {
@@ -61,6 +62,8 @@ public partial class About : Page
 
             //    conn.Close();
             //}
+
+            //To Do: add a table to see the items they want before they delete them. just to verify.
         }
         catch (Exception error)
         {
