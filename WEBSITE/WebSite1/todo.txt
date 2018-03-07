@@ -1,0 +1,79 @@
+Barcode scanner:
+
+Barcode scanner needs to be implmented for everything
+---------------------------------------------------------------------
+Audit Report:
+TB
+	Tag Number
+	Location ID
+	Project ID
+	User ID
+CB
+	For All
+	
+Audit report.cs:
+still needs to be bundled for sql and export to excel doc
+---------------------------------------------------------------------
+Create Inventory:
+TB
+	Tag Number
+	Serial Number
+	Description
+	Number Purchased
+	Purchased Date
+	Equipment Cost
+	replacement Cost
+	Location ID
+
+Create Inventory.cs:
+	set up for sql, just needs hooks into database and confirmation. 
+---------------------------------------------------------------------
+Delete Inventory:
+	Tag Number	
+	Serial Number
+	Description
+	User ID
+	
+Delete Inventory.cs:
+	set up for sql
+	bring up a list of matches and have them confirm which to delete if the tag number
+	does not exist. 
+---------------------------------------------------------------------
+Disable Inventory:
+	dont know if we need this. disabled it for now.
+---------------------------------------------------------------------
+Locate Inventory:
+	Tag Number
+	Move Date
+	Description
+	Location ID
+	Project ID
+	User ID
+	
+Locate Inventory.cs:
+	needs to be bundled for sql and the return gets displayed of a table
+	create a grid for the return inventory
+---------------------------------------------------------------------
+Updated Inventory:
+	Tag Number
+	Location ID
+	User ID
+	
+Updated Inventory.cs:
+	set up for sql, just needs hooks into database and  confirmation
+---------------------------------------------------------------------
+View Inventory:
+	Tag Number
+	Serial Number
+	Description
+	Location ID
+	
+View Inventory.cs:
+	sql bundle set up. needs to be exported to a excel doc and saved to a file path
+
+---------------------------------------------------------------------
+Sql Database:
+
+
+---------------------------------------------------------------------
+

@@ -25,10 +25,7 @@ public partial class About : Page
                 TagNumber = tb_TagNumber.Text != string.Empty ? tb_TagNumber.Text : throw argEx,//this needs to be a required field
                 SerialNumber = tb_SerialNumber.Text,
                 Description = tb_Description.Text,
-                LocationID = ddl_Location.SelectedValue != string.Empty ? Convert.ToInt32(ddl_Location.SelectedValue) : 0,
-                Building = ddl_Building.SelectedValue,
-                RoomNumber = ddl_RoomNumber.SelectedValue,
-                Department = ddl_Department.SelectedValue
+                LocationID = ddl_Location.SelectedValue != string.Empty ? Convert.ToInt32(ddl_Location.SelectedValue) : 0
             };
         }
         catch (ArgumentNullException agex)

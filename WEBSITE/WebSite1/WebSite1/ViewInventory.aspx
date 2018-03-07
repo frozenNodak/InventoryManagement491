@@ -44,32 +44,6 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="column" style="float: left; width: 20%;">
-            <asp:Label ID="lbl_Building" runat="server" Text="Building: "></asp:Label>
-        </div>
-        <div class="column" style="float: left; width: 15%;">
-            <asp:DropDownList ID="ddl_Building" Style="width:175px;" runat="server"  Width="125px" />  <%--TODO: Bind Building from DB?--%>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="column" style="float: left; width: 20%;">
-            <asp:Label ID="lbl_RoomNumber" runat="server" Text="Room Number: "></asp:Label>
-        </div>
-        <div class="column" style="float: left; width: 15%;">
-            <asp:DropDownList ID="ddl_RoomNumber" Style="width:175px;" runat="server"  Width="125px" />  <%--TODO: Bind RoomNumbers from DB?--%>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="column" style="float: left; width: 20%;">
-            <asp:Label ID="lbl_Department" runat="server" Text="Department: "></asp:Label>
-        </div>
-        <div class="column" style="float: left; width: 15%;">
-            <asp:DropDownList ID="ddl_Department" Style="width:175px;" runat="server"  Width="125px" />  <%--TODO: Bind locations from DB--%>
-        </div>
-    </div>
 
      <%-- 
     <asp:Label ID="lbl_EquipType" runat="server" Text="Equipment Type: "></asp:Label>
