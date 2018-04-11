@@ -35,6 +35,9 @@ public partial class About : Page
 
     protected void Btn_Submit_Click(object sender, EventArgs e)
     {
+        TextBox tb_EquipmentCost = (TextBox)FindControl("tb_EquipmentCost");
+        TextBox tb_NumberPurchased = (TextBox)FindControl("tb_NumberPurchased");
+        Label lbl_warning = (Label)FindControl("lbl_warning");
         lbl_warning.Text = "";
         System.ArgumentNullException argEx = new ArgumentNullException();
         try
@@ -70,32 +73,33 @@ public partial class About : Page
         {
             lbl_warning.Text += ex.Message;
         }
-        SqlConnection connectionString = new SqlConnection(WebConfigurationManager.ConnectionStrings["ChristianDBConnectionString"].ConnectionString);
+        SqlConnection connectionString = new SqlConnection(WebConfigurationManager.ConnectionStrings["IMSConnectionString"].ConnectionString);
 
         try
         {
-            //using (SqlConnection conn = new SqlConnection(connectionString.ToString()))
-            //{
-            //    SqlCommand cmd = new SqlCommand();
-            //    cmd.Connection = conn;
-            //    cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            //    cmd.CommandText = "IMS_Insert_Equipment";
-            //    //cmd.Parameters.AddWithValue("@TagNumber", newEquip.TagNumber);
-            //    //cmd.Parameters.AddWithValue("@SerialNumber", newEquip.SerialNumber);
-            //    //cmd.Parameters.AddWithValue("@Description", newEquip.Description);
-            //    //cmd.Parameters.AddWithValue("@NumberPurchased", newEquip.Quantity);
-            //    //cmd.Parameters.AddWithValue("@DatePurchased", newEquip.DatePurchased);
-            //    //cmd.Parameters.AddWithValue("@CostPerItem", newEquip.CostPerItem);
-            //    //cmd.Parameters.AddWithValue("@TotalOriginalCost", newEquip.TotalCost);
-            //    //cmd.Parameters.AddWithValue("@ReplacementCostPerItem", newEquip.ReplaceCostPerItem);
-            //    //cmd.Parameters.AddWithValue("@TotalReplacementCost", newEquip.TotalReplaceCost);
-            //    //cmd.Parameters.AddWithValue("@Minor", newEquip.Minor);
-            //    //cmd.Parameters.AddWithValue("@LocationID", newEquip.LocationID);
+            using (SqlConnection conn = new SqlConnection(connectionString.ToString()))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "IMS_Insert_Equipment";
+                cmd.Parameters.AddWithValue("@TagNumber", newEquip.TagNumber);
+                cmd.Parameters.AddWithValue("@SerialNumber", newEquip.SerialNumber);
+                cmd.Parameters.AddWithValue("@Description", newEquip.Description);
+                cmd.Parameters.AddWithValue("@NumberPurchased", newEquip.Quantity);
+                cmd.Parameters.AddWithValue("@DatePurchased", newEquip.DatePurchased);
+                cmd.Parameters.AddWithValue("@CostPerItem", newEquip.CostPerItem);
+                cmd.Parameters.AddWithValue("@TotalOriginalCost", newEquip.TotalCost);
+                cmd.Parameters.AddWithValue("@ReplacementCostPerItem", newEquip.ReplaceCostPerItem);
+                cmd.Parameters.AddWithValue("@TotalReplacementCost", newEquip.TotalReplaceCost);
+                cmd.Parameters.AddWithValue("@Minor", newEquip.Minor);
+                cmd.Parameters.AddWithValue("@LocationID", newEquip.LocationID);
 
-            //    cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
-            //    conn.Close();
-            //}
+                conn.Close();
+            }
         }
         catch (Exception error)
         {
