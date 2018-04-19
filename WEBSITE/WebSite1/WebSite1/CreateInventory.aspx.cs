@@ -8,7 +8,7 @@ using Spire;
 using System.Data.SqlClient;
 using System.Web.Configuration;
 
-public partial class About : Page
+public partial class CreateInventory : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -24,7 +24,7 @@ public partial class About : Page
         }
         catch (Exception ex)
         {
-            this.tb_TagNumber.Text = "Error: " + ex.Message;
+            tb_TagNumber.Text = "Error: " + ex.Message;
         }
     }
 
