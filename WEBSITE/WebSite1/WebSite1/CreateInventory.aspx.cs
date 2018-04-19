@@ -8,7 +8,7 @@ using Spire;
 using System.Data.SqlClient;
 using System.Web.Configuration;
 
-public partial class CreateInventory : Page
+public partial class About : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -64,26 +64,19 @@ public partial class CreateInventory : Page
                 Minor = IsMinor,
                 LocationID = ddl_Location.SelectedValue != string.Empty ? Convert.ToInt32(ddl_Location.SelectedValue) : 0
             };
-        }
-        catch (ArgumentNullException agex)
-        {
-            lbl_warning.Text = agex.Message;
-        }
-        catch (Exception ex)
-        {
-            lbl_warning.Text += ex.Message;
-        }
-        SqlConnection connectionString = new SqlConnection(WebConfigurationManager.ConnectionStrings["IMSConnectionString"].ConnectionString);
 
-        try
-        {
+
+            SqlConnection connectionString = new SqlConnection(WebConfigurationManager.ConnectionStrings["IMSConnectionString"].ConnectionString);
+
             using (SqlConnection conn = new SqlConnection(connectionString.ToString()))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = conn;
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.CommandText = "IMS_Insert_Equipment";
+                SqlCommand cmd = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandType = System.Data.CommandType.StoredProcedure,
+                    CommandText = "IMS_Insert_Equipment"
+                };
                 cmd.Parameters.AddWithValue("@TagNumber", newEquip.TagNumber);
                 cmd.Parameters.AddWithValue("@SerialNumber", newEquip.SerialNumber);
                 cmd.Parameters.AddWithValue("@Description", newEquip.Description);
@@ -101,10 +94,18 @@ public partial class CreateInventory : Page
                 conn.Close();
             }
         }
-        catch (Exception error)
+        catch (ArgumentNullException agex)
         {
-            ClientScript.RegisterStartupScript(this.GetType(), error.Message.ToString(), "alert('" + error.Message.ToString() + "');", true);
+            lbl_warning.Text = agex.Message;
         }
+        catch (Exception ex)
+        {
+            lbl_warning.Text += ex.Message;
+        }
+        //catch (Exception error)
+        //{
+        //    ClientScript.RegisterStartupScript(this.GetType(), error.Message.ToString(), "alert('" + error.Message.ToString() + "');", true);
+        //}
 
 
     }
