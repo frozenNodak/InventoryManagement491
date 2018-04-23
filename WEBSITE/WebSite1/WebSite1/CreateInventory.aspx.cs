@@ -35,10 +35,6 @@ public partial class About : Page
 
     protected void Btn_Submit_Click(object sender, EventArgs e)
     {
-        TextBox tb_EquipmentCost = (TextBox)FindControl("tb_EquipmentCost");
-        TextBox tb_NumberPurchased = (TextBox)FindControl("tb_NumberPurchased");
-        Label lbl_warning = (Label)FindControl("lbl_warning");
-        lbl_warning.Text = "";
         System.ArgumentNullException argEx = new ArgumentNullException();
         try
         {
@@ -66,7 +62,7 @@ public partial class About : Page
             };
 
 
-            SqlConnection connectionString = new SqlConnection(WebConfigurationManager.ConnectionStrings["IMSConnectionString"].ConnectionString);
+            SqlConnection connectionString = new SqlConnection(WebConfigurationManager.ConnectionStrings["IMSConnectionString"].ToString());
 
             using (SqlConnection conn = new SqlConnection(connectionString.ToString()))
             {
@@ -100,7 +96,7 @@ public partial class About : Page
         }
         catch (Exception ex)
         {
-            lbl_warning.Text += ex.Message;
+            lbl_warning.Text = ex.Message;
         }
         //catch (Exception error)
         //{
