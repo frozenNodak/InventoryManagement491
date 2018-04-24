@@ -15,7 +15,10 @@
             <asp:TextBox ID="tb_TagNumber" runat="server" MaxLength="7" Style="width:175px;"></asp:TextBox>
         </div>
         <div class="column" style="float: left; width: 10%;">
-            <asp:Button ID="bt_TagNumber" runat="server" Text="Scan Barcode" OnClick="Scan_function"></asp:Button>
+            <asp:Button ID="bt_TagNumber" runat="server" Text="Scan Barcode" OnClick="Bt_TagNumber_Click"></asp:Button>
+        </div>
+        <div class="column" style="float: left; width: 10%;">
+            <asp:Button ID="bt_CreateBarcode" runat="server" Text="Create Barcode" OnClick="Bt_TagNumber_Click"></asp:Button>
         </div>
     </div>
 
@@ -88,7 +91,7 @@
             <asp:Label ID="lbl_ReplacementCost" runat="server" Text="Replacement Cost Per Item: "></asp:Label>
         </div>
         <div class="column" style="float: left; width: 15%;">
-            <asp:TextBox ID="tb_ReplacementCost" runat="server" TextMode="DateTime" Style="width: 175px;"></asp:TextBox>
+            <asp:TextBox ID="tb_ReplasementCost" runat="server" TextMode="DateTime" Style="width: 175px;"></asp:TextBox>
         </div>
     </div>
 
