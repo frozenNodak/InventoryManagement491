@@ -11,7 +11,72 @@ public partial class About : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        tb_TagNumber.Text = Convert.ToString(Request.QueryString["barcode"]);
+        EquipObj loadEquip = new EquipObj();
+        if (VerifyTagNum(tb_TagNumber.Text))
+        {
+            SqlConnection connectionString = new SqlConnection(WebConfigurationManager.ConnectionStrings["IMSConnectionString"].ToString());
 
+            using (SqlConnection conn = new SqlConnection(connectionString.ToString()))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandType = System.Data.CommandType.StoredProcedure,
+                    CommandText = "IMS_Get_Select_Equipment"
+                };
+                cmd.Parameters.Add(new SqlParameter("@TagNumber", tb_TagNumber.Text));//should only return one row
+                using (SqlDataReader rdr = cmd.ExecuteReader())
+                {
+                    while (rdr.Read())
+                    {
+                        //query based on the tag number
+                        loadEquip.TagNumber = rdr["TagNumber"].ToString();
+                        loadEquip.SerialNumber = rdr["SerialNumber"].ToString();
+                        loadEquip.Description = rdr["Description"].ToString();
+                        loadEquip.Quantity = Convert.ToInt32(rdr["NumberPerchased"]);
+                        loadEquip.DatePurchased = Convert.ToDateTime(rdr["DatePurchased"]);
+                        loadEquip.CostPerItem = Convert.ToInt32(rdr["CostPerItem"]);
+                        loadEquip.TotalCost = Convert.ToInt32(rdr["TotalOriginalCost"]);
+                        loadEquip.ReplaceCostPerItem = Convert.ToInt32(rdr["ReplacementCostPerItem"]);
+                        loadEquip.TotalReplaceCost = Convert.ToInt32(rdr["TotalReplacementCost"]);
+                        loadEquip.Minor = Convert.ToBoolean(rdr["Minor"].ToString());
+                        //add in something to get the location of the equip
+                    }
+                }
+                conn.Close();
+            }
+            tb_SerialNumber.Text = loadEquip.TagNumber;
+            tb_Description.Text = loadEquip.Description;
+            //show the location of the equip
+        }
+    }
+
+    protected bool VerifyTagNum(string tag)
+    {
+        if (tag.Any(ch => !char.IsLetterOrDigit(ch)))
+        {
+            return false;
+        }
+        if (!char.IsLetter(tag.FirstOrDefault()))
+        {
+            return false;
+        }
+        return true;
+    }
+
+    protected void Scan_function(object sender, EventArgs e)
+    {
+        try
+        {
+            Response.Redirect("http://zxing.appspot.com/scan?ret=http%3A%2F%2Flocalhost%3A4739%2FCreateInventory%3Fbarcode%3D%7BCODE%7D");
+        }
+        catch (Exception ex)
+        {
+
+            this.lbl_warning.Text = "Error: " + ex.Message;
+        }
     }
     protected void Btn_Submit_Click(object sender, EventArgs e)
     {
