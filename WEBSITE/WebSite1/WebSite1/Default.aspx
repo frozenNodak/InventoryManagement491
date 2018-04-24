@@ -16,7 +16,7 @@
                 Create Inventory by entering the equipment information in the required fields. &nbsp;
             </p>
             <p>
-                <a class="btn btn-default" href="CreateInventory.aspx">Create Inventory &raquo;</a>
+                <a class="btn btn-default" href="CreateInventory.aspx" >Create Inventory &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
