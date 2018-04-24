@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Spire;
 using System.Data.SqlClient;
-using System.Web.Configuration;
+using System.Configuration;
 
 public partial class About : Page
 {
@@ -62,14 +62,14 @@ public partial class About : Page
             };
 
 
-            SqlConnection connectionString = new SqlConnection(WebConfigurationManager.ConnectionStrings["IMSConnectionString"].ToString());
+            SqlConnection connectionString = new SqlConnection(ConfigurationManager.ConnectionStrings["IMSConnectionString"].ToString());
 
-            using (SqlConnection conn = new SqlConnection(connectionString.ToString()))
+            using (connectionString)
             {
-                conn.Open();
+                connectionString.Open();
                 SqlCommand cmd = new SqlCommand
                 {
-                    Connection = conn,
+                    Connection = connectionString,
                     CommandType = System.Data.CommandType.StoredProcedure,
                     CommandText = "IMS_Insert_Equipment"
                 };
@@ -79,24 +79,24 @@ public partial class About : Page
                 cmd.Parameters.AddWithValue("@NumberPurchased", newEquip.Quantity);
                 cmd.Parameters.AddWithValue("@DatePurchased", newEquip.DatePurchased);
                 cmd.Parameters.AddWithValue("@CostPerItem", newEquip.CostPerItem);
-                cmd.Parameters.AddWithValue("@TotalOriginalCost", newEquip.TotalCost);
                 cmd.Parameters.AddWithValue("@ReplacementCostPerItem", newEquip.ReplaceCostPerItem);
-                cmd.Parameters.AddWithValue("@TotalReplacementCost", newEquip.TotalReplaceCost);
                 cmd.Parameters.AddWithValue("@Minor", newEquip.Minor);
                 cmd.Parameters.AddWithValue("@LocationID", newEquip.LocationID);
 
                 cmd.ExecuteNonQuery();
 
-                conn.Close();
+                connectionString.Close();
             }
         }
         catch (ArgumentNullException agex)
         {
             lbl_warning.Text = agex.Message;
+            lbl_warning.Visible = true;
         }
         catch (Exception ex)
         {
             lbl_warning.Text = ex.Message;
+            lbl_warning.Visible = true;
         }
         //catch (Exception error)
         //{

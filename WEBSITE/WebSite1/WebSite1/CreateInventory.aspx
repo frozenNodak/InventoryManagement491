@@ -4,7 +4,7 @@
     <div class="row">
         <h2><%: Title %>.</h2>
         <h3>Scan in the barcode and/or enter in the necessary information.</h3>
-        <p><asp:Label ID="lbl_warning" runat="server" Text="" ForeColor="red"></asp:Label></p>
+        <p><asp:Label ID="lbl_warning" runat="server" Text="" ForeColor="red" Visible="false"></asp:Label></p>
     </div>
 
     <div class="row">
@@ -109,7 +109,7 @@
             <asp:Label ID="lbl_Location" runat="server" Text="Location: "></asp:Label>
         </div>
         <div class="column" style="float: left; width: 15%;">
-            <asp:DropDownList ID="ddl_Location" Style="width:175px;" runat="server"  Width="125px" />  <%--TODO: Bind locations from DB--%>
+            <asp:DropDownList ID="ddl_Location" Style="width:175px;" runat="server"  Width="125px" DataSourceID="Select_Locations" DataTextField="Location" DataValueField="LocationID" />  <%--TODO: Bind locations from DB--%>
         </div>
     </div>
 
@@ -146,5 +146,7 @@
             <asp:Button ID="btn_Submit" runat="server" Text="Submit Info" OnClick="Btn_Submit_Click" />
         </div>
     </div>
+
+    <asp:SqlDataSource ID="Select_Locations" runat="server" ConnectionString="<%$ ConnectionStrings:IMSConnectionString %>" SelectCommandType="StoredProcedure" SelectCommand="IMS_Select_Location"></asp:SqlDataSource>
 
 </asp:Content>
