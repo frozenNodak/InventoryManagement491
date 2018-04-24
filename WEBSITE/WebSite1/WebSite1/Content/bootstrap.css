@@ -47,6 +47,10 @@ audio:not([controls]) {
   height: 0;
 }
 
+p {
+        font-family: Arial, Helvetica, sans-serif;
+}
+
 [hidden] {
   display: none;
 }
@@ -70,9 +74,14 @@ a:hover {
   outline: 0;
 }
 
+.logo {
+    
+}
+
 h1 {
-  margin: 0.67em 0;
-  font-size: 2em;
+    margin: 0.67em 0;
+    font-size: 2em;
+    font-family: 'MS Gothic';
 }
 
 abbr[title] {
@@ -4028,6 +4037,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+  background-color:black;
 }
 
 .navbar:before,

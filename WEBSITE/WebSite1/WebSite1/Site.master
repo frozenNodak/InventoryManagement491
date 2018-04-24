@@ -40,14 +40,21 @@
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
+                <div class="header-bottom">
+                    <h1>
+                        <a href ="longBlackUNDlogo.png" class = "navbar-brand"><img src="longBlackUNDlogo.png" title="UNDLogo" ></a>
+                    </h1>
+                </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Inventory Management</a>
+                    </button> 
+                    <%--<a class="navbar-brand" runat="server" href="~/">Inventory Management</a>--%>
+                    <%--<a href ="longBlackUNDlogo.png" class = "navbar-brand"><img src="longBlackUNDlogo.png" title="UNDLogo" /></a>--%>
                 </div>
+                <br />
                 <div class="navbar-collapse collapse" >
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
