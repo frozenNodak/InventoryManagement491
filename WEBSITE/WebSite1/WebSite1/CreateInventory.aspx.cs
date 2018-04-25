@@ -7,7 +7,11 @@ using System.Web.UI.WebControls;
 using Spire;
 using System.Data.SqlClient;
 using System.Configuration;
-
+/*
+ * Create Inventory
+ * This page is used to create new inventory entries. 
+ * 
+ */
 public partial class About : Page
 {
     protected void Page_Load(object sender, EventArgs e)

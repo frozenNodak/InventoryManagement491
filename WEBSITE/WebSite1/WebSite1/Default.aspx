@@ -4,7 +4,7 @@
 
     <div class="jumbotron">
         <h1>
-            <asp:Image ID="UNDImage" runat="server" Height="350px" Width="430px" ImageUrl="~/InventManage.png" ImageAlign="Middle" /><br />
+            <asp:Image ID="UNDImage" runat="server" Height="350px" Width="430px" ImageUrl="~/InventManage.png" ImageAlign="Middle" padding-left ="20px"/><br />
             Inventory Management System</h1>
         <p class="lead">I.M.S helps keep track of Major and Minor Equipment around UND</p>
     </div>
