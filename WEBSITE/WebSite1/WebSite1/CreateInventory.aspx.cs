@@ -86,6 +86,9 @@ public partial class About : Page
                 cmd.ExecuteNonQuery();
 
                 connectionString.Close();
+
+                lbl_success.Text = "Inventory added successfully.";
+                lbl_success.Visible = true;
             }
         }
         catch (ArgumentNullException agex)
