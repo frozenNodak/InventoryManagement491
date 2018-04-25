@@ -13,7 +13,6 @@ public partial class About : Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //geting barcode number from returned url
-        //TextBoxName.Text = Convert.ToString(Request.QueryString["barcode"]);
         tb_TagNumber.Text = Convert.ToString(Request.QueryString["barcode"]);
     }
 
