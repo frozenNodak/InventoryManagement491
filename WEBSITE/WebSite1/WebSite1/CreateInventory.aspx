@@ -21,9 +21,6 @@
         <div class="column" style="float: left; width: 10%;">
             <asp:Button ID="bt_TagNumber" runat="server" Text="Scan Barcode" OnClick="Bt_TagNumber_Click"></asp:Button>
         </div>
-        <div class="column" style="float: left; width: 10%;">
-            <asp:Button ID="bt_CreateBarcode" runat="server" Text="Create Barcode" OnClick="Bt_TagNumber_Click"></asp:Button>
-        </div>
     </div>
 
     <div class="row">
