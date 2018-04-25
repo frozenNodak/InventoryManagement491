@@ -12,15 +12,16 @@ public partial class About : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        //geting barcode number from returned url
+        tb_TagNumber.Text = Convert.ToString(Request.QueryString["barcode"]);
     }
 
     protected void Bt_TagNumber_Click(object sender, EventArgs e)
     {
         try
         {
-            string[] datas = Spire.Barcode.BarcodeScanner.Scan(@"C:\Users\David\Documents\cs 492\WEBSITE\WebSite1\bc_M158566.png");
-            tb_TagNumber.Text = datas[0];
+            //redrect code to ZXING moblies sccaner rederect page 
+            Response.Redirect("http://zxing.appspot.com/scan?ret=http%3A%2F%2Flocalhost%3A4739%2FCreateInventory%3Fbarcode%3D%7BCODE%7D");
         }
         catch (Exception ex)
         {
@@ -86,9 +87,6 @@ public partial class About : Page
                 cmd.ExecuteNonQuery();
 
                 connectionString.Close();
-
-                lbl_success.Text = "Inventory added successfully.";
-                lbl_success.Visible = true;
             }
         }
         catch (ArgumentNullException agex)

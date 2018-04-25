@@ -11,8 +11,24 @@ public partial class About : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        //geting barcode number from returned url
+        //TextBoxName.Text = Convert.ToString(Request.QueryString["barcode"]);
+        //tb_TagNumber.Text = Convert.ToString(Request.QueryString["barcode"]);
     }
+
+    protected void Bt_Scanner_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            //redrect code to ZXING moblies sccaner rederect page 
+            Response.Redirect("http://zxing.appspot.com/scan?ret=http%3A%2F%2Flocalhost%3A4739%2FUpdateInventory%3Fbarcode%3D%7BCODE%7D");
+        }
+        catch (Exception ex)
+        {
+            tb_TagNumber.Text = "Error: " + ex.Message;
+        }
+    }
+
     protected void Btn_Submit_Click(object sender, EventArgs e)
     {
         lbl_warning.Text = "";
