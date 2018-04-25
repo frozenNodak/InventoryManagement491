@@ -1,10 +1,14 @@
 ﻿<%@ Page Title="Create Inventory" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="CreateInventory.aspx.cs" Inherits="About" %>
 
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row">
-        <h2><%: Title %>.</h2>
+    <div class="header" runat="server">
+<div class="row">
+        <h2>Create Inventory</h2>
         <h3>Scan in the barcode and/or enter in the necessary information.</h3>
         <p><asp:Label ID="lbl_warning" runat="server" Text="" ForeColor="red" Visible="false"></asp:Label></p>
+        <p><asp:Label ID="lbl_success" runat="server" Text="" ForeColor="green" Visible="false"></asp:Label></p>
+    </div>
     </div>
 
     <div class="row">

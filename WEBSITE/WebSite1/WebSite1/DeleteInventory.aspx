@@ -16,6 +16,9 @@
          <div class="column" style="float: left; width: 20%;">
              <asp:TextBox ID="tb_TagNumber" runat="server" MaxLength="7" Style="width: 175px;"></asp:TextBox>
          </div>
+        <div class="column" style="float: left; width: 10%;">
+            <asp:Button ID="bt_TagNumber" runat="server" Text="Scan Barcode" OnClick="Scan_function"></asp:Button>
+        </div>
      </div>
 
     <div class="row">
