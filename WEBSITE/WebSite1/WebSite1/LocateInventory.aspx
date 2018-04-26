@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <h2><%: Title %>.</h2>
+        <h2>Locate Inventory</h2>
         <h3>Scan in the barcode and/or enter in the necessary information.</h3>
         <p>This locator will return a list of matching inventory.</p>
     </div>
