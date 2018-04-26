@@ -4028,7 +4028,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-  background-color: black;
 }
 
 .navbar:before,
@@ -4147,7 +4146,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .container > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
-  background-color: black;
+  background-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -4391,7 +4390,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: transparent;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -4508,7 +4507,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #999999;
+  color: transparent;
 }
 
 .navbar-inverse .navbar-brand:hover,
