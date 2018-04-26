@@ -18,7 +18,6 @@ public partial class About : Page
     {
         //TextBoxName.Text = Convert.ToString(Request.QueryString["barcode"]);
         tb_TagNumber.Text = Convert.ToString(Request.QueryString["barcode"]);
-        tb_SerialNumber.Text = Convert.ToString(Request.QueryString["barcode"]);
     }
 
     protected void Bt_TagNumber_Click(object sender, EventArgs e)

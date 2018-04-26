@@ -28,16 +28,16 @@
                 <a class="btn btn-default" href="ViewInventory.aspx">View Equipment &raquo;</a>
             </p>
         </div>
-        <div class="col-md-4">
-            <h2>Delete Inventory</h2>
+        <%--<div class="col-md-4">--%>
+           <%-- <h2>Delete Inventory</h2>
             <p>
                 Equipment can be removed by providing the equipment ID, reason for removal, and proper authorization. 
             </p>
             <p>
                 <a class="btn btn-default" href="DeleteInventory.aspx">Delete Inventory &raquo;</a>
             </p>
-        </div>
-         <div class="col-md-4">
+        </div>--%>
+         <%--<div class="col-md-4">
             <h2>Update Inventory</h2>
             <p>
                 Equipment can be Update with a scan of the barcode. Fields that can be updated are:Status, Location, and User. (ANYTHING ELSE?)
@@ -45,7 +45,7 @@
             <p>
                 <a class="btn btn-default" href="UpdateInventory.aspx">Update Inventory &raquo;</a>
             </p>
-        </div>
+        </div>--%>
          <div class="col-md-4">
             <h2>Locate Inventory</h2>
             <p>
@@ -55,7 +55,7 @@
                 <a class="btn btn-default" href="LocateInventory.aspx">Locate Inventory &raquo;</a>
             </p>
         </div>
-         <div class="col-md-4">
+         <%--<div class="col-md-4">
             <h2>Disable Inventory</h2>
             <p>
                 Equipment can be disabled in the event of a malfunction. (IS THIS NECESSARY?) 
@@ -63,6 +63,9 @@
             <p>
                 <a class="btn btn-default" href="DisableInventory.aspx">Disable Inventory &raquo;</a>
             </p>
+        </div>--%>
+        <div class="col-md-4">
+            
         </div>
          <div class="col-md-4">
             <h2>Print Audit Report</h2>
