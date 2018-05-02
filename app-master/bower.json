@@ -1,7 +1,0 @@
-{
-  "name": "und-ims",
-  "private": "true",
-  "dependencies": {
-    "ionic": "^1.3.2"
-  }
-}

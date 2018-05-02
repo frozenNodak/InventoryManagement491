@@ -1,7 +1,0 @@
-#Wed Oct 04 00:34:26 CDT 2017
-base.0=C\:\\Users\\David\\Documents\\cs 492\\InventoryManagement\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_eff60b2baa4c2f30300ff7f762251693d99eb3db
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\Users\\David\\Documents\\cs 492\\InventoryManagement\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_0e0ba00eb4ae0ad8b01a3cd349e855af81b1fe6d\\classes.dex
-base.1=C\:\\Users\\David\\Documents\\cs 492\\InventoryManagement\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_0e0ba00eb4ae0ad8b01a3cd349e855af81b1fe6d
-file.0=C\:\\Users\\David\\Documents\\cs 492\\InventoryManagement\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_eff60b2baa4c2f30300ff7f762251693d99eb3db\\classes.dex
