@@ -64,9 +64,17 @@
                 <a class="btn btn-default" href="DisableInventory.aspx">Disable Inventory &raquo;</a>
             </p>
         </div>--%>
+        
         <div class="col-md-4">
-            
+            <h2>Create Location</h2>
+            <p>
+                Create locations which can be assigned to equipment.
+            </p>
+            <p>
+                <a class="btn btn-default" href="CreateLocation.aspx">Create Location &raquo;</a>
+            </p>
         </div>
+
          <div class="col-md-4">
             <h2>Print Audit Report</h2>
             <p>
@@ -76,5 +84,6 @@
                 <a class="btn btn-default" href="AuditReport.aspx">Print Report &raquo;</a>
             </p>
         </div>
+
     </div>
 </asp:Content>
