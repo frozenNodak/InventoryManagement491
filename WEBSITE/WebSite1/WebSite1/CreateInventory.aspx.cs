@@ -43,8 +43,10 @@ public partial class About : Page
         System.ArgumentNullException argEx = new ArgumentNullException();
         try
         {
+            // If we have empty strings in these boxes which expect numbers, set the value to a number
             var costPer = tb_EquipmentCost.Text != string.Empty ? Convert.ToDecimal(tb_EquipmentCost.Text) : 0;
             var qty = tb_NumberPurchased.Text != string.Empty ? Convert.ToInt32(tb_NumberPurchased.Text) : 0;
+            // Set if equipment is minor
             bool IsMinor = false;
             if (costPer < 5000)
             {
@@ -66,18 +68,21 @@ public partial class About : Page
                 LocationID = ddl_Location.SelectedValue != string.Empty ? Convert.ToInt32(ddl_Location.SelectedValue) : 0
             };
 
-
+            // Set our connection to the database to the connection string
             SqlConnection connectionString = new SqlConnection(ConfigurationManager.ConnectionStrings["IMSConnectionString"].ToString());
-
+            // Using our new connection string
             using (connectionString)
             {
+                // Open our connection
                 connectionString.Open();
+                // Set command details
                 SqlCommand cmd = new SqlCommand
                 {
                     Connection = connectionString,
                     CommandType = System.Data.CommandType.StoredProcedure,
                     CommandText = "IMS_Insert_Equipment"
                 };
+                // Pass parameter values     @ParameterName, Value.to.pass
                 cmd.Parameters.AddWithValue("@TagNumber", newEquip.TagNumber);
                 cmd.Parameters.AddWithValue("@SerialNumber", newEquip.SerialNumber);
                 cmd.Parameters.AddWithValue("@Description", newEquip.Description);
@@ -87,30 +92,26 @@ public partial class About : Page
                 cmd.Parameters.AddWithValue("@ReplacementCostPerItem", newEquip.ReplaceCostPerItem);
                 cmd.Parameters.AddWithValue("@Minor", newEquip.Minor);
                 cmd.Parameters.AddWithValue("@LocationID", newEquip.LocationID);
-
+                // Execute the command
                 cmd.ExecuteNonQuery();
-
+                // Close the connection
                 connectionString.Close();
-
+                // Display a success message, since by this point it went through
                 lbl_success.Text = "Inventory added successfully.";
                 lbl_success.Visible = true;
             }
         }
         catch (ArgumentNullException agex)
         {
+            // Display the error message that we caught
             lbl_warning.Text = agex.Message;
             lbl_warning.Visible = true;
         }
         catch (Exception ex)
         {
+            // Display the error message that we caught
             lbl_warning.Text = ex.Message;
             lbl_warning.Visible = true;
         }
-        //catch (Exception error)
-        //{
-        //    ClientScript.RegisterStartupScript(this.GetType(), error.Message.ToString(), "alert('" + error.Message.ToString() + "');", true);
-        //}
-
-
     }
 }

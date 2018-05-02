@@ -14,6 +14,14 @@ public partial class About : Page
 
     }
 
+    /*
+     ******** READ ********
+     * This page is NOT COMPLETE
+     * 
+     * TODO: Update inventory operations, delete inventory operations
+     * 
+     */
+
     protected void ddl_Location_SelectedIndexChanged(object sender, EventArgs e)
     {
         DropDownList ddl = (DropDownList)gvEquipment.Rows[0].FindControl("ddl_Location");
