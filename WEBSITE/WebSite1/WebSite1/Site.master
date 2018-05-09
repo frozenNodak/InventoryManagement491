@@ -9,6 +9,7 @@
     <title><%: Page.Title %> - Inventory Management System</title>
 
     <asp:PlaceHolder runat="server">
+
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
